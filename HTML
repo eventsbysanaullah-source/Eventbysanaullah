@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Event Management Services | Events by Sanaullah</title>
+    <meta name="description" content="Creating unforgettable weddings, birthday parties, night events, university functions, and special occasions with professional planning and creative decoration.">
+    <meta name="keywords" content="event management, event planner, wedding planner, birthday party planner, event decoration, party planner, Pakistan">
+    <link rel="canonical" href="https://www.yourdomain.com/">
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Event Management Services | Events by Sanaullah">
+    <meta property="og:description" content="Professional event planning and creative decorations for all your special occasions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourdomain.com/">
+    
+    <!-- Google Fonts: Playfair Display (Luxury) & Montserrat (Clean Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- JSON-LD Local SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Events by Sanaullah",
+      "image": "https://www.yourdomain.com/logo.jpg",
+      "@id": "https://www.yourdomain.com/",
+      "url": "https://www.yourdomain.com/",
+      "telephone": "+923429042005",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[ADD BUSINESS ADDRESS]",
+        "addressLocality": "[ADD YOUR CITY]",
+        "addressRegion": "Punjab",
+        "postalCode": "[ADD ZIP]",
+        "addressCountry": "PK"
+      },
+      "areaServed": ["[ADD CITIES/AREAS]"],
+      "sameAs": [
+        "https://www.instagram.com/reels/DbqpsHXgzbP/",
+        "https://www.tiktok.com/en/",
+        "[ADD THE CORRECT PINTEREST PROFILE URL HERE]"
+      ]
+    }
+    </script>
+
+    <style>
+        /* CSS Variables for Luxury Theme */
+        :root {
+            --primary-color: #D4AF37; /* Metallic Gold */
+            --primary-dark: #aa8c2c;
+            --secondary-color: #1a1a1a; /* Dark Charcoal */
+            --bg-light: #fafafa;
+            --text-color: #333333;
+            --white: #ffffff;
+            --whatsapp-green: #25D366;
+        }
+
+        /* Reset & Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text-color); line-height: 1.6; background-color: var(--bg-light); }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--secondary-color); margin-bottom: 1rem; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        img { max-width: 100%; height: auto; display: block; }
+        
+        /* Utility Classes */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section-padding { padding: 80px 0; }
+        .text-center { text-align: center; }
+        .btn { display: inline-block; padding: 12px 30px; font-weight: 600; border-radius: 4px; cursor: pointer; transition: 0.3s; }
+        .btn-primary { background: var(--primary-color); color: var(--white); border: 2px solid var(--primary-color); }
+        .btn-primary:hover { background: transparent; color: var(--primary-color); }
+        .btn-whatsapp { background: var(--whatsapp-green); color: var(--white); }
+        .btn-whatsapp:hover { background: #128C7E; }
+
+        /* Navigation */
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--primary-color); }
+        .nav-menu { display: flex; list-style: none; gap: 20px; }
+        .nav-menu a { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-menu a:hover { color: var(--primary-color); }
+        .mobile-toggle { display: none; font-size: 24px; cursor: pointer; }
+
+        /* Hero Section */
+        .hero { position: relative; background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover; height: 90vh; display: flex; align-items: center; text-align: center; color: var(--white); }
+        .hero h1 { color: var(--white); font-size: 3.5rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px; font-weight: 300; }
+        .hero-btns { display: flex; gap: 20px; justify-content: center; }
+
+        /* Services Grid */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .service-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-10px); }
+        .service-img { height: 200px; width: 100%; object-fit: cover; }
+        .service-content { padding: 25px; text-align: center; }
+        .service-content h3 { font-size: 1.5rem; }
+        .service-link { color: var(--primary-color); font-weight: 600; text-transform: uppercase; font-size: 14px; margin-top: 15px; display: inline-block; }
+
+        /* Trust / About Section */
+        .trust-section { background: var(--secondary-color); color: var(--white); }
+        .trust-section h2 { color: var(--primary-color); }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        .feature-item { text-align: center; padding: 20px; }
+        .feature-item i { font-size: 40px; color: var(--primary-color); margin-bottom: 15px; }
+
+        /* Gallery Grid */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 30px; }
+        .gallery-item img { border-radius: 8px; height: 250px; width: 100%; object-fit: cover; transition: 0.3s; }
+        .gallery-item img:hover { transform: scale(1.05); opacity: 0.9; }
+
+        /* FAQ Section */
+        .faq-item { background: var(--white); margin-bottom: 15px; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+        .faq-question { font-weight: 600; color: var(--secondary-color); cursor: pointer; display: flex; justify-content: space-between; }
+        .faq-answer { margin-top: 10px; display: none; color: #666; }
+
+        /* Contact Section */
+        .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .contact-form input, .contact-form select, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; }
+        .contact-info { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+
+        /* Footer */
+        footer { background: var(--secondary-color); color: var(--white); padding: 60px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .footer-col h4 { color: var(--primary-color); }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a:hover { color: var(--primary-color); }
+        .social-icons { display: flex; gap: 15px; margin-top: 20px; }
+        .social-icons a { background: var(--primary-color); color: var(--secondary-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s; }
+        .social-icons a:hover { background: var(--white); }
+        .copyright { text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 14px; }
+
+        /* Floating WhatsApp Button */
+        .floating-whatsapp { position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp-green); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; transition: transform 0.3s; }
+        .floating-whatsapp:hover { transform: scale(1.1); color: white; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: var(--white); padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .nav-menu.active { display: flex; }
+            .mobile-toggle { display: block; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero-btns { flex-direction: column; }
+            .contact-wrapper { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="/" class="logo">Events by Sanaullah</a>
+            <i class="fas fa-bars mobile-toggle" id="mobileToggle"></i>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Professional Event Management & Event Planning Services</h1>
+            <p>Creating unforgettable weddings, birthday parties, night events, university functions and special occasions with professional planning, creative decoration, and memorable experiences.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Plan Your Event</a>
+                <a href="https://wa.me/923429042005" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Contact Us on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Our Event Management Services</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto;">We offer comprehensive event planning and decoration services customized to fit your theme, budget, and vision.</p>
+            
+            <div class="services-grid">
+                <!-- Wedding -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Wedding Event Management and Decoration" class="service-img">
+                    <div class="service-content">
+                        <h3>Wedding Event Management</h3>
+                        <p>Complete wedding coordination, stage decoration, Mehndi, Baraat, and Walima setups.</p>
+                        <a href="#wedding-events" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Birthday -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8892bf309c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Birthday Party Planning and Decoration" class="service-img">
+                    <div class="service-content">
+                        <h3>Birthday Party Planning</h3>
+                        <p>Themed birthday parties for kids and adults, balloon decorations, and entertainment.</p>
+                        <a href="#birthday-parties" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Night Party -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Night Party and DJ Event Setup" class="service-img">
+                    <div class="service-content">
+                        <h3>Night Party Management</h3>
+                        <p>DJ events, lighting, sound systems, and private night parties.</p>
+                        <a href="#night-parties" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- University -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1523580494112-071d169408fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="University Event Coordination" class="service-img">
+                    <div class="service-content">
+                        <h3>University Events</h3>
+                        <p>Welcome parties, farewells, annual functions, and cultural events.</p>
+                        <a href="#university-events" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Corporate -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Corporate Event Meetings and Conferences" class="service-img">
+                    <div class="service-content">
+                        <h3>Corporate Events</h3>
+                        <p>Conferences, product launches, award ceremonies, and company dinners.</p>
+                        <a href="#corporate-events" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Decoration -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Event Floral and Stage Decoration" class="service-img">
+                    <div class="service-content">
+                        <h3>Floral & Stage Decoration</h3>
+                        <p>Premium floral arrangements, stage designs, and ambient lighting.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust / Why Choose Us -->
+    <section class="trust-section section-padding" id="about">
+        <div class="container">
+            <h2 class="text-center">Why Choose Events by Sanaullah?</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto;">We specialize in professional event planning and management, turning your vision into a reality with creative decoration and reliable coordination.</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-gem"></i>
+                    <h3>Creative Designs</h3>
+                    <p>Customized packages and unique decoration themes tailored to your specific event.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>Complete Coordination</h3>
+                    <p>From planning to execution, our professional team handles every single detail.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-star"></i>
+                    <h3>Customer Satisfaction</h3>
+                    <p>Dedicated to delivering high-quality, memorable experiences for you and your guests.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tags"></i>
+                    <h3>Customized Packages</h3>
+                    <p>Flexible pricing and event packages to accommodate various budgets without compromising quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Placeholder -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Our Event Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Use descriptive ALT tags for SEO -->
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="Elegant Wedding Stage Decoration Setup"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="Birthday Party Theme Decoration with Balloons"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="DJ Night Party Lighting and Dance Floor"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="Corporate Conference Setup and Catering"></div>
+            </div>
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="#contact" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding" style="background: var(--bg-light);">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">What services does Events by Sanaullah provide? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">We offer comprehensive event management services including wedding planning, birthday party decoration, night parties, university events, corporate events, stage decoration, lighting, and catering.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Do you manage complete wedding events? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Yes, we provide end-to-end wedding event management. This includes planning, stage decoration, floral arrangements, catering, and lighting for Mehndi, Baraat, and Walima events.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Do you provide customized event packages? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Absolutely. We understand that every event is unique, so we create customized packages based on your guest count, venue, theme, and budget.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Plan Your Event Today</h2>
+            <div class="contact-wrapper">
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Get a Free Event Consultation</h3>
+                    <p style="margin-bottom: 20px;">Contact us to discuss your upcoming event, request pricing, or schedule a meeting.</p>
+                    
+                    <a href="https://wa.me/923429042005" target="_blank" class="btn btn-whatsapp" style="display: block; text-align: center; font-size: 1.1rem; padding: 15px; margin-bottom: 30px;">
+                        <i class="fab fa-whatsapp"></i> Chat With Us on WhatsApp
+                    </a>
+                    
+                    <p><i class="fas fa-phone" style="color: var(--primary-color);"></i> <strong>Phone:</strong> 03429042005</p>
+                    <p><i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i> <strong>Location:</strong> [ADD YOUR CITY], Pakistan</p>
+                    <p><i class="fas fa-globe" style="color: var(--primary-color);"></i> <strong>Service Areas:</strong> [ADD CITIES/AREAS]</p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <input type="email" name="email" placeholder="Email Address">
+                        
+                        <select name="event_type" required>
+                            <option value="">Select Event Type</option>
+                            <option value="Wedding">Wedding Event</option>
+                            <option value="Birthday">Birthday Party</option>
+                            <option value="Night Party">Night Party</option>
+                            <option value="University">University Event</option>
+                            <option value="Corporate">Corporate Event</option>
+                            <option value="Other">Other Social Function</option>
+                        </select>
+                        
+                        <div style="display: flex; gap: 15px;">
+                            <input type="date" name="event_date" required style="width: 50%;">
+                            <input type="number" name="guests" placeholder="No. of Guests" style="width: 50%;">
+                        </div>
+                        
+                        <input type="text" name="budget" placeholder="Estimated Budget (Optional)">
+                        <textarea name="message" rows="4" placeholder="Tell us about your event vision..."></textarea>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Event Pricing</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 15px;">Events by Sanaullah</h4>
+                    <p>Professional event management, creative decoration, and reliable coordination for your most memorable days.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/reels/DbqpsHXgzbP/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/en/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="[ADD PINTEREST URL]" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#gallery">Event Gallery</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#wedding-events">Wedding Event Management</a></li>
+                        <li><a href="#birthday-parties">Birthday Party Planning</a></li>
+                        <li><a href="#night-parties">Night Party Management</a></li>
+                        <li><a href="#university-events">University Event Setup</a></li>
+                        <li><a href="#corporate-events">Corporate Coordination</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fab fa-whatsapp"></i> 03429042005</li>
+                        <li><i class="fas fa-map-marker-alt"></i> [ADD YOUR CITY], Pakistan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Events by Sanaullah. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/923429042005" target="_blank" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Basic Interactions JS -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobileToggle').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
+
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                answer.style.display = "block";
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
+    </script>
+</body>
+</html>
