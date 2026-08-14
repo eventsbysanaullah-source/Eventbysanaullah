@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <!-- SEO Meta Tags -->
+    <!-- Primary SEO Meta Tags -->
     <title>Event Management Services | Events by Sanaullah</title>
-    <meta name="description" content="Creating unforgettable weddings, birthday parties, night events, university functions, and special occasions with professional planning and creative decoration.">
-    <meta name="keywords" content="event management, event planner, wedding planner, birthday party planner, event decoration, party planner, Pakistan">
+    <meta name="description" content="Professional event management & planning services for weddings, birthdays, night parties, university functions & corporate events in Pakistan.">
+    <meta name="keywords" content="event management, event planner, wedding event management, birthday party planner, night party management, university event management, corporate event management, event decoration">
     <link rel="canonical" href="https://www.yourdomain.com/">
     
     <!-- Open Graph / Social Sharing -->
     <meta property="og:title" content="Event Management Services | Events by Sanaullah">
-    <meta property="og:description" content="Professional event planning and creative decorations for all your special occasions.">
+    <meta property="og:description" content="Creating unforgettable weddings, birthdays, corporate and night events with creative decoration and professional management.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.yourdomain.com/">
     
-    <!-- Google Fonts: Playfair Display (Luxury) & Montserrat (Clean Body) -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- JSON-LD Local SEO Schema -->
@@ -32,6 +31,7 @@
       "@id": "https://www.yourdomain.com/",
       "url": "https://www.yourdomain.com/",
       "telephone": "+923429042005",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "[ADD BUSINESS ADDRESS]",
@@ -50,122 +50,198 @@
     </script>
 
     <style>
-        /* CSS Variables for Luxury Theme */
+        /* Modern Luxury CSS Architecture */
         :root {
-            --primary-color: #D4AF37; /* Metallic Gold */
-            --primary-dark: #aa8c2c;
-            --secondary-color: #1a1a1a; /* Dark Charcoal */
-            --bg-light: #fafafa;
-            --text-color: #333333;
-            --white: #ffffff;
+            --primary-gold: #D4AF37;
+            --primary-dark-gold: #AA8C2C;
+            --secondary-dark: #121212;
+            --bg-light: #F9F9F9;
+            --bg-white: #FFFFFF;
+            --text-dark: #2B2B2B;
+            --text-muted: #666666;
             --whatsapp-green: #25D366;
+            --whatsapp-hover: #128C7E;
+            --border-light: #E2E2E2;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Montserrat', sans-serif;
+            --transition: all 0.3s ease;
         }
 
-        /* Reset & Base Styles */
+        /* Reset & Base Setup */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
-        body { font-family: 'Montserrat', sans-serif; color: var(--text-color); line-height: 1.6; background-color: var(--bg-light); }
-        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--secondary-color); margin-bottom: 1rem; }
-        a { text-decoration: none; color: inherit; transition: 0.3s; }
-        img { max-width: 100%; height: auto; display: block; }
+        body { font-family: var(--font-body); color: var(--text-dark); line-height: 1.6; background-color: var(--bg-light); overflow-x: hidden; }
         
-        /* Utility Classes */
+        h1, h2, h3, h4, h5 { font-family: var(--font-heading); color: var(--secondary-dark); line-height: 1.2; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        img { max-width: 100%; height: auto; display: block; }
+        ul { list-style: none; }
+        
+        /* Typography & Layout Helpers */
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .section-padding { padding: 80px 0; }
+        .section-padding { padding: 90px 0; }
         .text-center { text-align: center; }
-        .btn { display: inline-block; padding: 12px 30px; font-weight: 600; border-radius: 4px; cursor: pointer; transition: 0.3s; }
-        .btn-primary { background: var(--primary-color); color: var(--white); border: 2px solid var(--primary-color); }
-        .btn-primary:hover { background: transparent; color: var(--primary-color); }
-        .btn-whatsapp { background: var(--whatsapp-green); color: var(--white); }
-        .btn-whatsapp:hover { background: #128C7E; }
+        .section-subtitle { color: var(--primary-gold); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; font-size: 14px; margin-bottom: 10px; display: block; }
+        .section-title { font-size: 2.5rem; margin-bottom: 15px; text-transform: capitalize; }
+        .section-desc { max-width: 700px; margin: 0 auto 50px; color: var(--text-muted); font-size: 1.05rem; }
 
-        /* Navigation */
-        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
-        .logo { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--primary-color); }
-        .nav-menu { display: flex; list-style: none; gap: 20px; }
-        .nav-menu a { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
-        .nav-menu a:hover { color: var(--primary-color); }
-        .mobile-toggle { display: none; font-size: 24px; cursor: pointer; }
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 32px; font-weight: 600; font-size: 15px; border-radius: 4px; cursor: pointer; transition: var(--transition); border: 2px solid transparent; text-transform: uppercase; letter-spacing: 1px; }
+        .btn-gold { background: var(--primary-gold); color: var(--bg-white); border-color: var(--primary-gold); }
+        .btn-gold:hover { background: transparent; color: var(--primary-gold); }
+        .btn-outline { background: transparent; color: var(--bg-white); border-color: var(--bg-white); }
+        .btn-outline:hover { background: var(--bg-white); color: var(--secondary-dark); }
+        .btn-whatsapp { background: var(--whatsapp-green); color: var(--bg-white); border-color: var(--whatsapp-green); }
+        .btn-whatsapp:hover { background: var(--whatsapp-hover); border-color: var(--whatsapp-hover); }
+
+        /* Header & Navigation */
+        header { background: var(--bg-white); box-shadow: 0 2px 15px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
+        .logo { font-family: var(--font-heading); font-size: 26px; font-weight: 700; color: var(--secondary-dark); letter-spacing: -0.5px; }
+        .logo span { color: var(--primary-gold); }
+        .nav-menu { display: flex; align-items: center; gap: 24px; }
+        .nav-link { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--secondary-dark); }
+        .nav-link:hover, .nav-link.active { color: var(--primary-gold); }
+        .mobile-toggle { display: none; font-size: 24px; cursor: pointer; color: var(--secondary-dark); }
 
         /* Hero Section */
-        .hero { position: relative; background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover; height: 90vh; display: flex; align-items: center; text-align: center; color: var(--white); }
-        .hero h1 { color: var(--white); font-size: 3.5rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px; font-weight: 300; }
-        .hero-btns { display: flex; gap: 20px; justify-content: center; }
+        .hero { position: relative; background: linear-gradient(rgba(18, 18, 18, 0.75), rgba(18, 18, 18, 0.75)), url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; min-height: 85vh; display: flex; align-items: center; text-align: center; color: var(--bg-white); padding: 60px 0; }
+        .hero h1 { font-size: 3.5rem; color: var(--bg-white); margin-bottom: 20px; font-weight: 700; }
+        .hero p { font-size: 1.25rem; max-width: 850px; margin: 0 auto 35px; font-weight: 300; opacity: 0.9; }
+        .hero-actions { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
 
         /* Services Grid */
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
-        .service-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
-        .service-card:hover { transform: translateY(-10px); }
-        .service-img { height: 200px; width: 100%; object-fit: cover; }
-        .service-content { padding: 25px; text-align: center; }
-        .service-content h3 { font-size: 1.5rem; }
-        .service-link { color: var(--primary-color); font-weight: 600; text-transform: uppercase; font-size: 14px; margin-top: 15px; display: inline-block; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .service-card { background: var(--bg-white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: var(--transition); border: 1px solid var(--border-light); display: flex; flex-direction: column; }
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(0,0,0,0.12); }
+        .service-img-wrap { height: 220px; overflow: hidden; position: relative; }
+        .service-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+        .service-card:hover .service-img-wrap img { transform: scale(1.08); }
+        .service-body { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; }
+        .service-body h3 { font-size: 1.4rem; margin-bottom: 12px; }
+        .service-body p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1; }
+        .service-btn { align-self: flex-start; background: transparent; border: none; color: var(--primary-gold); font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+        .service-btn:hover { color: var(--primary-dark-gold); gap: 10px; }
 
-        /* Trust / About Section */
-        .trust-section { background: var(--secondary-color); color: var(--white); }
-        .trust-section h2 { color: var(--primary-color); }
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
-        .feature-item { text-align: center; padding: 20px; }
-        .feature-item i { font-size: 40px; color: var(--primary-color); margin-bottom: 15px; }
+        /* Gallery Filters */
+        .gallery-filters { display: flex; justify-content: center; gap: 10px; margin-bottom: 35px; flex-wrap: wrap; }
+        .filter-btn { padding: 8px 20px; border-radius: 30px; background: var(--bg-white); border: 1px solid var(--border-light); font-size: 14px; font-weight: 600; cursor: pointer; transition: var(--transition); color: var(--text-dark); }
+        .filter-btn.active, .filter-btn:hover { background: var(--primary-gold); color: var(--bg-white); border-color: var(--primary-gold); }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .gallery-item { position: relative; border-radius: 8px; overflow: hidden; height: 260px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: var(--transition); color: var(--bg-white); }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
 
-        /* Gallery Grid */
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 30px; }
-        .gallery-item img { border-radius: 8px; height: 250px; width: 100%; object-fit: cover; transition: 0.3s; }
-        .gallery-item img:hover { transform: scale(1.05); opacity: 0.9; }
+        /* Budget Estimator Tool */
+        .calculator-box { background: var(--bg-white); padding: 40px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid var(--border-light); max-width: 800px; margin: 0 auto; }
+        .calc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 25px; }
+        .calc-field label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 14px; }
+        .calc-field select, .calc-field input { width: 100%; padding: 12px; border: 1px solid var(--border-light); border-radius: 4px; font-family: inherit; }
+        .calc-result { background: var(--bg-light); padding: 20px; border-radius: 6px; text-align: center; border: 1px dashed var(--primary-gold); }
+        .calc-result h4 { font-size: 1.1rem; color: var(--text-muted); }
+        .calc-result p { font-size: 2rem; color: var(--primary-gold); font-weight: 700; font-family: var(--font-heading); }
 
-        /* FAQ Section */
-        .faq-item { background: var(--white); margin-bottom: 15px; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
-        .faq-question { font-weight: 600; color: var(--secondary-color); cursor: pointer; display: flex; justify-content: space-between; }
-        .faq-answer { margin-top: 10px; display: none; color: #666; }
+        /* Trust Section */
+        .trust-section { background: var(--secondary-dark); color: var(--bg-white); }
+        .trust-section .section-title { color: var(--bg-white); }
+        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; }
+        .trust-card { padding: 30px 20px; text-align: center; background: rgba(255,255,255,0.03); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); }
+        .trust-card i { font-size: 38px; color: var(--primary-gold); margin-bottom: 15px; }
+        .trust-card h3 { color: var(--bg-white); font-size: 1.25rem; margin-bottom: 10px; }
+        .trust-card p { color: #AAAAAA; font-size: 0.9rem; }
 
-        /* Contact Section */
-        .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
-        .contact-form input, .contact-form select, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; }
-        .contact-info { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        /* Blog Cards */
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .blog-card { background: var(--bg-white); border-radius: 8px; overflow: hidden; border: 1px solid var(--border-light); box-shadow: 0 4px 15px rgba(0,0,0,0.04); }
+        .blog-card img { height: 200px; width: 100%; object-fit: cover; }
+        .blog-body { padding: 25px; }
+        .blog-date { font-size: 12px; color: var(--primary-gold); font-weight: 600; text-transform: uppercase; margin-bottom: 8px; display: block; }
+        .blog-body h3 { font-size: 1.2rem; margin-bottom: 12px; line-height: 1.4; }
+        .blog-body p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px; }
+
+        /* FAQ Accordion */
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: var(--bg-white); border-radius: 6px; margin-bottom: 15px; border: 1px solid var(--border-light); overflow: hidden; }
+        .faq-header { padding: 20px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 600; font-size: 1.05rem; color: var(--secondary-dark); }
+        .faq-body { padding: 0 20px 20px; color: var(--text-muted); font-size: 0.95rem; display: none; line-height: 1.7; }
+        .faq-item.active .faq-body { display: block; }
+        .faq-item.active .faq-header i { transform: rotate(180deg); color: var(--primary-gold); }
+
+        /* Contact Section Form */
+        .contact-wrapper { display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; background: var(--bg-white); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.06); border: 1px solid var(--border-light); }
+        .contact-info-panel { background: var(--secondary-dark); color: var(--bg-white); padding: 50px; display: flex; flex-direction: column; justify-content: space-between; }
+        .contact-info-panel h3 { color: var(--bg-white); font-size: 2rem; margin-bottom: 15px; }
+        .info-list { margin: 30px 0; }
+        .info-item { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px; }
+        .info-item i { color: var(--primary-gold); font-size: 20px; margin-top: 3px; }
+        .contact-form-panel { padding: 50px; }
+        .form-group { margin-bottom: 20px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .form-control { width: 100%; padding: 14px; border: 1px solid var(--border-light); border-radius: 4px; font-family: inherit; font-size: 14px; transition: var(--transition); }
+        .form-control:focus { outline: none; border-color: var(--primary-gold); }
 
         /* Footer */
-        footer { background: var(--secondary-color); color: var(--white); padding: 60px 0 20px; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
-        .footer-col h4 { color: var(--primary-color); }
-        .footer-col ul { list-style: none; }
-        .footer-col ul li { margin-bottom: 10px; }
-        .footer-col ul li a:hover { color: var(--primary-color); }
-        .social-icons { display: flex; gap: 15px; margin-top: 20px; }
-        .social-icons a { background: var(--primary-color); color: var(--secondary-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s; }
-        .social-icons a:hover { background: var(--white); }
-        .copyright { text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 14px; }
+        footer { background: var(--secondary-dark); color: var(--bg-white); padding: 70px 0 25px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; margin-bottom: 50px; }
+        .footer-brand h3 { color: var(--bg-white); font-size: 1.8rem; margin-bottom: 15px; }
+        .footer-links h4 { color: var(--primary-gold); font-size: 1.1rem; margin-bottom: 20px; font-family: var(--font-body); text-transform: uppercase; letter-spacing: 1px; }
+        .footer-links li { margin-bottom: 10px; font-size: 14px; }
+        .footer-links a { color: #BBB; }
+        .footer-links a:hover { color: var(--primary-gold); padding-left: 5px; }
+        .social-row { display: flex; gap: 12px; margin-top: 20px; }
+        .social-btn { width: 40px; height: 40px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--bg-white); transition: var(--transition); }
+        .social-btn:hover { background: var(--primary-gold); color: var(--secondary-dark); }
+        .footer-bottom { text-align: center; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 13px; color: #888888; }
 
         /* Floating WhatsApp Button */
-        .floating-whatsapp { position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp-green); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; transition: transform 0.3s; }
-        .floating-whatsapp:hover { transform: scale(1.1); color: white; }
+        .floating-whatsapp { position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp-green); color: var(--bg-white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); z-index: 999; transition: var(--transition); }
+        .floating-whatsapp:hover { transform: scale(1.1); color: var(--bg-white); background: var(--whatsapp-hover); }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-menu { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: var(--white); padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
-            .nav-menu.active { display: flex; }
-            .mobile-toggle { display: block; }
-            .hero h1 { font-size: 2.5rem; }
-            .hero-btns { flex-direction: column; }
+        /* Full Screen Service / Sub-page Modal */
+        .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); z-index: 2000; display: none; align-items: center; justify-content: center; padding: 20px; }
+        .modal.active { display: flex; }
+        .modal-content { background: var(--bg-white); border-radius: 8px; max-width: 900px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 40px; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
+        .modal-close { position: absolute; top: 20px; right: 20px; font-size: 24px; cursor: pointer; color: var(--text-muted); transition: var(--transition); }
+        .modal-close:hover { color: var(--secondary-dark); }
+        .modal-body h2 { font-size: 2.2rem; margin-bottom: 15px; color: var(--secondary-dark); }
+        .modal-body img { width: 100%; height: 350px; object-fit: cover; border-radius: 6px; margin: 20px 0; }
+        .modal-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 25px 0; }
+        .modal-feature-item { background: var(--bg-light); padding: 12px 15px; border-radius: 4px; font-weight: 600; font-size: 14px; border-left: 3px solid var(--primary-gold); }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 2.8rem; }
             .contact-wrapper { grid-template-columns: 1fr; }
+            .contact-info-panel, .contact-form-panel { padding: 35px; }
+        }
+        @media (max-width: 768px) {
+            .mobile-toggle { display: block; }
+            .nav-menu { position: absolute; top: 100%; left: 0; width: 100%; background: var(--bg-white); flex-direction: column; padding: 25px; gap: 18px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); display: none; }
+            .nav-menu.active { display: flex; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+            .section-title { font-size: 2rem; }
+            .form-row { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header & Navigation -->
+    <!-- Header Navigation -->
     <header>
-        <div class="container nav-container">
-            <a href="/" class="logo">Events by Sanaullah</a>
-            <i class="fas fa-bars mobile-toggle" id="mobileToggle"></i>
+        <div class="container nav-wrapper">
+            <a href="/" class="logo">Events by <span>Sanaullah</span></a>
+            <i class="fas fa-bars mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation"></i>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#estimator" class="nav-link">Cost Calculator</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
             </ul>
         </div>
     </header>
@@ -173,277 +249,678 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <h1>Professional Event Management & Event Planning Services</h1>
-            <p>Creating unforgettable weddings, birthday parties, night events, university functions and special occasions with professional planning, creative decoration, and memorable experiences.</p>
-            <div class="hero-btns">
-                <a href="#contact" class="btn btn-primary">Plan Your Event</a>
-                <a href="https://wa.me/923429042005" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Contact Us on WhatsApp</a>
+            <h1>Professional Event Management & Planning Services</h1>
+            <p>Creating unforgettable weddings, birthday parties, night events, university functions, and corporate occasions with creative decoration and seamless coordination.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-gold">Plan Your Event</a>
+                <a href="https://wa.me/923429042005" target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Contact Us on WhatsApp</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Overview -->
+    <!-- Services Overview Section -->
     <section id="services" class="section-padding">
         <div class="container">
-            <h2 class="text-center">Our Event Management Services</h2>
-            <p class="text-center" style="max-width: 700px; margin: 0 auto;">We offer comprehensive event planning and decoration services customized to fit your theme, budget, and vision.</p>
-            
+            <span class="section-subtitle text-center">What We Do</span>
+            <h2 class="section-title text-center">Our Event Management Services</h2>
+            <p class="section-desc text-center">We provide end-to-end event organization, creative decoration setups, ambient lighting, catering, and execution tailored to your budget.</p>
+
             <div class="services-grid">
-                <!-- Wedding -->
+                <!-- Service Card 1 -->
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Wedding Event Management and Decoration" class="service-img">
-                    <div class="service-content">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Wedding Event Management and Stage Decoration">
+                    </div>
+                    <div class="service-body">
                         <h3>Wedding Event Management</h3>
-                        <p>Complete wedding coordination, stage decoration, Mehndi, Baraat, and Walima setups.</p>
-                        <a href="#wedding-events" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <p>Complete wedding coordination, floral decoration, stage setups, Mehndi, Baraat, and Walima planning.</p>
+                        <button class="service-btn" onclick="openModal('modal-wedding')">Learn More <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
-                <!-- Birthday -->
+
+                <!-- Service Card 2 -->
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1530103862676-de8892bf309c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Birthday Party Planning and Decoration" class="service-img">
-                    <div class="service-content">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8892bf309c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Birthday Party Planning and Theme Decoration">
+                    </div>
+                    <div class="service-body">
                         <h3>Birthday Party Planning</h3>
-                        <p>Themed birthday parties for kids and adults, balloon decorations, and entertainment.</p>
-                        <a href="#birthday-parties" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <p>Kids and adult birthday parties, customized balloon setups, theme backdrops, and entertainment arrangements.</p>
+                        <button class="service-btn" onclick="openModal('modal-birthday')">Learn More <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
-                <!-- Night Party -->
+
+                <!-- Service Card 3 -->
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Night Party and DJ Event Setup" class="service-img">
-                    <div class="service-content">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Night Party Management DJ and Sound Systems">
+                    </div>
+                    <div class="service-body">
                         <h3>Night Party Management</h3>
-                        <p>DJ events, lighting, sound systems, and private night parties.</p>
-                        <a href="#night-parties" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <p>Stylish night events, concert lighting, professional sound and DJ setups, private parties, and stage design.</p>
+                        <button class="service-btn" onclick="openModal('modal-night')">Learn More <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
-                <!-- University -->
+
+                <!-- Service Card 4 -->
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1523580494112-071d169408fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="University Event Coordination" class="service-img">
-                    <div class="service-content">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1523580494112-071d169408fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="University Event Management Welcome and Farewell Functions">
+                    </div>
+                    <div class="service-body">
                         <h3>University Events</h3>
-                        <p>Welcome parties, farewells, annual functions, and cultural events.</p>
-                        <a href="#university-events" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <p>Welcome parties, farewell celebrations, annual galas, cultural functions, and stage audio setups.</p>
+                        <button class="service-btn" onclick="openModal('modal-university')">Learn More <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
-                <!-- Corporate -->
+
+                <!-- Service Card 5 -->
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Corporate Event Meetings and Conferences" class="service-img">
-                    <div class="service-content">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Corporate Event Planning and Business Conferences">
+                    </div>
+                    <div class="service-body">
                         <h3>Corporate Events</h3>
-                        <p>Conferences, product launches, award ceremonies, and company dinners.</p>
-                        <a href="#corporate-events" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <p>Business conferences, product launches, corporate dinners, award ceremonies, and venue branding.</p>
+                        <button class="service-btn" onclick="openModal('modal-corporate')">Learn More <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
-                <!-- Decoration -->
+
+                <!-- Service Card 6 -->
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Event Floral and Stage Decoration" class="service-img">
-                    <div class="service-content">
-                        <h3>Floral & Stage Decoration</h3>
-                        <p>Premium floral arrangements, stage designs, and ambient lighting.</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Stage Decoration Floral Designs and Ambient Lighting">
+                    </div>
+                    <div class="service-body">
+                        <h3>Decor, Floral & Lighting</h3>
+                        <p>Stage design, fresh flower arrangements, theme lighting, catering support, and high-end aesthetics.</p>
+                        <button class="service-btn" onclick="openModal('modal-decor')">Learn More <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust / Why Choose Us -->
-    <section class="trust-section section-padding" id="about">
+    <!-- Why Choose Us / Trust Section -->
+    <section id="about" class="trust-section section-padding">
         <div class="container">
-            <h2 class="text-center">Why Choose Events by Sanaullah?</h2>
-            <p class="text-center" style="max-width: 800px; margin: 0 auto;">We specialize in professional event planning and management, turning your vision into a reality with creative decoration and reliable coordination.</p>
-            
-            <div class="features-grid">
-                <div class="feature-item">
-                    <i class="fas fa-gem"></i>
-                    <h3>Creative Designs</h3>
-                    <p>Customized packages and unique decoration themes tailored to your specific event.</p>
+            <span class="section-subtitle text-center" style="color: var(--primary-gold);">Why Work With Us</span>
+            <h2 class="section-title text-center">Why Choose Events by Sanaullah?</h2>
+            <p class="section-desc text-center" style="color: #BBB;">We combine creative event designs with systematic planning to ensure your function runs smoothly from start to finish.</p>
+
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Professional Planning</h3>
+                    <p>Meticulous attention to detail, timeline scheduling, and structural vendor management.</p>
                 </div>
-                <div class="feature-item">
-                    <i class="fas fa-clipboard-list"></i>
-                    <h3>Complete Coordination</h3>
-                    <p>From planning to execution, our professional team handles every single detail.</p>
+                <div class="trust-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Creative Decoration</h3>
+                    <p>Custom theme creation, fresh floral setups, luxury stage design, and ambient lighting.</p>
                 </div>
-                <div class="feature-item">
-                    <i class="fas fa-star"></i>
-                    <h3>Customer Satisfaction</h3>
-                    <p>Dedicated to delivering high-quality, memorable experiences for you and your guests.</p>
+                <div class="trust-card">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Reliable Execution</h3>
+                    <p>On-site coordination staff to ensure smooth setup and execution on event day.</p>
                 </div>
-                <div class="feature-item">
-                    <i class="fas fa-tags"></i>
+                <div class="trust-card">
+                    <i class="fas fa-hand-holding-usd"></i>
                     <h3>Customized Packages</h3>
-                    <p>Flexible pricing and event packages to accommodate various budgets without compromising quality.</p>
+                    <p>Tailored options designed to align with your venue choice, guest size, and budget.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Placeholder -->
+    <!-- Categorized Interactive Gallery -->
     <section id="gallery" class="section-padding">
         <div class="container">
-            <h2 class="text-center">Our Event Gallery</h2>
+            <span class="section-subtitle text-center">Visual Portfolio</span>
+            <h2 class="section-title text-center">Our Event Gallery</h2>
+            <p class="section-desc text-center">Browse through recent setup designs, floral arrangements, and stage setups across various function types.</p>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" onclick="filterGallery('all')">All Events</button>
+                <button class="filter-btn" onclick="filterGallery('wedding')">Weddings</button>
+                <button class="filter-btn" onclick="filterGallery('birthday')">Birthdays</button>
+                <button class="filter-btn" onclick="filterGallery('night')">Night Parties</button>
+                <button class="filter-btn" onclick="filterGallery('university')">University</button>
+                <button class="filter-btn" onclick="filterGallery('corporate')">Corporate</button>
+            </div>
+
             <div class="gallery-grid">
-                <!-- Use descriptive ALT tags for SEO -->
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="Elegant Wedding Stage Decoration Setup"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="Birthday Party Theme Decoration with Balloons"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="DJ Night Party Lighting and Dance Floor"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="Corporate Conference Setup and Catering"></div>
-            </div>
-            <div class="text-center" style="margin-top: 30px;">
-                <a href="#contact" class="btn btn-primary">View Full Gallery</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section-padding" style="background: var(--bg-light);">
-        <div class="container" style="max-width: 800px;">
-            <h2 class="text-center">Frequently Asked Questions</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">What services does Events by Sanaullah provide? <i class="fas fa-chevron-down"></i></div>
-                <div class="faq-answer">We offer comprehensive event management services including wedding planning, birthday party decoration, night parties, university events, corporate events, stage decoration, lighting, and catering.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">Do you manage complete wedding events? <i class="fas fa-chevron-down"></i></div>
-                <div class="faq-answer">Yes, we provide end-to-end wedding event management. This includes planning, stage decoration, floral arrangements, catering, and lighting for Mehndi, Baraat, and Walima events.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">Do you provide customized event packages? <i class="fas fa-chevron-down"></i></div>
-                <div class="faq-answer">Absolutely. We understand that every event is unique, so we create customized packages based on your guest count, venue, theme, and budget.</div>
+                <div class="gallery-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Luxury Wedding Stage Design with Fresh Flowers">
+                    <div class="gallery-overlay"><h4>Wedding Stage Decoration</h4></div>
+                </div>
+                <div class="gallery-item" data-category="birthday">
+                    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Theme Birthday Decoration Setup for Kids">
+                    <div class="gallery-overlay"><h4>Balloon Theme Backdrop</h4></div>
+                </div>
+                <div class="gallery-item" data-category="night">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Night Party DJ Lighting and Concert Stage Setup">
+                    <div class="gallery-overlay"><h4>Night DJ & Lighting</h4></div>
+                </div>
+                <div class="gallery-item" data-category="university">
+                    <img src="https://images.unsplash.com/photo-1523580494112-071d169408fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="University Farewell Function Stage Design">
+                    <div class="gallery-overlay"><h4>University Function Stage</h4></div>
+                </div>
+                <div class="gallery-item" data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Corporate Conference Audio Visual Setup">
+                    <div class="gallery-overlay"><h4>Corporate Conference Setup</h4></div>
+                </div>
+                <div class="gallery-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Mehndi Event Floral Entrance Gate Setup">
+                    <div class="gallery-overlay"><h4>Floral Decor Entrance</h4></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Cost Estimator Tool -->
+    <section id="estimator" class="section-padding" style="background: var(--bg-white);">
+        <div class="container">
+            <span class="section-subtitle text-center">Instant Planning Tool</span>
+            <h2 class="section-title text-center">Quick Event Cost Estimator</h2>
+            <p class="section-desc text-center">Select your parameters below to get an estimated baseline range for your upcoming function.</p>
+
+            <div class="calculator-box">
+                <div class="calc-grid">
+                    <div class="calc-field">
+                        <label for="calc-type">Event Type</label>
+                        <select id="calc-type" onchange="calculateBudget()">
+                            <option value="wedding">Wedding Event</option>
+                            <option value="birthday">Birthday Party</option>
+                            <option value="night">Night Party</option>
+                            <option value="university">University Event</option>
+                            <option value="corporate">Corporate Function</option>
+                        </select>
+                    </div>
+                    <div class="calc-field">
+                        <label for="calc-guests">Estimated Guests</label>
+                        <select id="calc-guests" onchange="calculateBudget()">
+                            <option value="100">Up to 100 Guests</option>
+                            <option value="250" selected>100 - 300 Guests</option>
+                            <option value="500">300 - 600 Guests</option>
+                            <option value="1000">600+ Guests</option>
+                        </select>
+                    </div>
+                    <div class="calc-field">
+                        <label for="calc-tier">Decor Package</label>
+                        <select id="calc-tier" onchange="calculateBudget()">
+                            <option value="standard">Standard Setup</option>
+                            <option value="premium" selected>Premium Setup</option>
+                            <option value="luxury">Luxury Custom Stage</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calc-result">
+                    <h4>Estimated Budget Range:</h4>
+                    <p id="calc-output">PKR 250,000 - PKR 450,000</p>
+                    <small style="color: #777;">*Final pricing depends on venue location, custom floral choices, menu selections, and actual scope.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / Educational Content Section -->
+    <section id="blog" class="section-padding">
+        <div class="container">
+            <span class="section-subtitle text-center">Event Guides & Tips</span>
+            <h2 class="section-title text-center">Latest from Our Blog</h2>
+            <p class="section-desc text-center">Useful advice and planning guides to help you organize a successful event.</p>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="How to Plan a Wedding Event">
+                    <div class="blog-body">
+                        <span class="blog-date">Wedding Guide</span>
+                        <h3>How to Plan a Perfect Wedding Event Step-by-Step</h3>
+                        <p>Essential steps to timeline management, stage vendor selection, and venue decor choices for Baraat and Walima.</p>
+                        <a href="#contact" class="service-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8892bf309c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Birthday Party Decoration Ideas">
+                    <div class="blog-body">
+                        <span class="blog-date">Birthday Tips</span>
+                        <h3>Creative Birthday Party Decoration & Theme Ideas</h3>
+                        <p>Modern balloon arch concepts, cake table backdrop arrangements, and lighting ideas for adult and kids parties.</p>
+                        <a href="#contact" class="service-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="University Event Management Setup">
+                    <div class="blog-body">
+                        <span class="blog-date">Event Strategy</span>
+                        <h3>How to Organize a Successful University Function</h3>
+                        <p>Key technical tips on managing sound systems, stage setup timing, security, and student crowds effectively.</p>
+                        <a href="#contact" class="service-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section-padding" style="background: var(--bg-white);">
+        <div class="container">
+            <span class="section-subtitle text-center">Got Questions?</span>
+            <h2 class="section-title text-center">Frequently Asked Questions</h2>
+            <p class="section-desc text-center">Clear answers regarding booking, package customizations, and event execution.</p>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        What services does Events by Sanaullah provide?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer faq-body">
+                        We provide complete event management, venue booking assistance, stage design, fresh and artificial floral decorations, ambient lighting, audio-visual sound setups, catering, photography, and event coordination across weddings, birthdays, night parties, university functions, and corporate events.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        Do you offer complete wedding event management?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer faq-body">
+                        Yes, we manage all wedding functions including Mehndi, Baraat, and Walima setups. Our team takes care of stage backdrops, floral pathways, seating layout, sound systems, catering setups, and on-site staff.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        Can I customize decor themes and packages?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer faq-body">
+                        All our services are customizable. You can choose specific color themes, floral choices, lighting setups, and guest sizes, and we will build a package tailored to your budget.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        How far in advance should I book my event?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer faq-body">
+                        For large functions like weddings and university galas, we recommend booking 3 to 6 weeks in advance. For birthday parties or smaller social functions, 1 to 2 weeks' notice is typically sufficient.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        How can I get a quote or book an event?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer faq-body">
+                        You can fill out the contact form on this page, or click the floating WhatsApp button to chat directly with us at 03429042005 for an immediate consultation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conversion Contact Section -->
     <section id="contact" class="section-padding">
         <div class="container">
-            <h2 class="text-center">Plan Your Event Today</h2>
+            <span class="section-subtitle text-center">Get In Touch</span>
+            <h2 class="section-title text-center">Plan Your Event With Us</h2>
+            <p class="section-desc text-center">Contact our team today to get a custom quote and lock in your event date.</p>
+
             <div class="contact-wrapper">
-                
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <h3>Get a Free Event Consultation</h3>
-                    <p style="margin-bottom: 20px;">Contact us to discuss your upcoming event, request pricing, or schedule a meeting.</p>
-                    
-                    <a href="https://wa.me/923429042005" target="_blank" class="btn btn-whatsapp" style="display: block; text-align: center; font-size: 1.1rem; padding: 15px; margin-bottom: 30px;">
+                <div class="contact-info-panel">
+                    <div>
+                        <h3>Events by Sanaullah</h3>
+                        <p style="opacity: 0.8; font-size: 0.95rem;">Dedicated to delivering reliable event planning, stage decorations, and memorable experiences.</p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <strong>Direct WhatsApp / Phone:</strong>
+                                    <p>03429042005</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>City Location:</strong>
+                                    <p>[ADD YOUR CITY], Pakistan</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <strong>Service Areas:</strong>
+                                    <p>[ADD CITIES/AREAS]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/923429042005" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width: 100%; text-align: center;">
                         <i class="fab fa-whatsapp"></i> Chat With Us on WhatsApp
                     </a>
-                    
-                    <p><i class="fas fa-phone" style="color: var(--primary-color);"></i> <strong>Phone:</strong> 03429042005</p>
-                    <p><i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i> <strong>Location:</strong> [ADD YOUR CITY], Pakistan</p>
-                    <p><i class="fas fa-globe" style="color: var(--primary-color);"></i> <strong>Service Areas:</strong> [ADD CITIES/AREAS]</p>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <form action="#" method="POST">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="tel" name="phone" placeholder="Phone Number" required>
-                        <input type="email" name="email" placeholder="Email Address">
-                        
-                        <select name="event_type" required>
-                            <option value="">Select Event Type</option>
-                            <option value="Wedding">Wedding Event</option>
-                            <option value="Birthday">Birthday Party</option>
-                            <option value="Night Party">Night Party</option>
-                            <option value="University">University Event</option>
-                            <option value="Corporate">Corporate Event</option>
-                            <option value="Other">Other Social Function</option>
-                        </select>
-                        
-                        <div style="display: flex; gap: 15px;">
-                            <input type="date" name="event_date" required style="width: 50%;">
-                            <input type="number" name="guests" placeholder="No. of Guests" style="width: 50%;">
+                <div class="contact-form-panel">
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Inquiry details received! We will contact you on WhatsApp/Phone shortly.');">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Full Name *" required>
                         </div>
-                        
-                        <input type="text" name="budget" placeholder="Estimated Budget (Optional)">
-                        <textarea name="message" rows="4" placeholder="Tell us about your event vision..."></textarea>
-                        
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Event Pricing</button>
+                        <div class="form-row form-group">
+                            <input type="tel" class="form-control" placeholder="Phone Number *" required>
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="form-row form-group">
+                            <select class="form-control" required>
+                                <option value="">Select Event Type *</option>
+                                <option value="Wedding">Wedding Event</option>
+                                <option value="Birthday">Birthday Party</option>
+                                <option value="Night Party">Night Party</option>
+                                <option value="University">University Function</option>
+                                <option value="Corporate">Corporate Event</option>
+                                <option value="Other">Other Function</option>
+                            </select>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="form-row form-group">
+                            <input type="number" class="form-control" placeholder="Estimated Guests">
+                            <input type="text" class="form-control" placeholder="Estimated Budget (PKR)">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" placeholder="Tell us about your event venue, decor requirements, or special preferences..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold" style="width: 100%;">Request Pricing & Consultation</button>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h4 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 15px;">Events by Sanaullah</h4>
-                    <p>Professional event management, creative decoration, and reliable coordination for your most memorable days.</p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/reels/DbqpsHXgzbP/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/en/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="[ADD PINTEREST URL]" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <div class="footer-brand">
+                    <h3>Events by Sanaullah</h3>
+                    <p style="color: #AAA; font-size: 14px; line-height: 1.6;">Your primary partner for professional event planning, creative stage setups, balloon theme backdrops, and seamless function execution.</p>
+                    <div class="social-row">
+                        <a href="https://www.instagram.com/reels/DbqpsHXgzbP/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/en/" target="_blank" rel="noopener" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="[ADD PINTEREST URL]" target="_blank" rel="noopener" class="social-btn" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="https://wa.me/923429042005" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
+
+                <div class="footer-links">
+                    <h4>Main Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Our Services</a></li>
-                        <li><a href="#gallery">Event Gallery</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#gallery">Event Portfolio</a></li>
+                        <li><a href="#blog">Articles & Guides</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Our Services</h4>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
                     <ul>
-                        <li><a href="#wedding-events">Wedding Event Management</a></li>
-                        <li><a href="#birthday-parties">Birthday Party Planning</a></li>
-                        <li><a href="#night-parties">Night Party Management</a></li>
-                        <li><a href="#university-events">University Event Setup</a></li>
-                        <li><a href="#corporate-events">Corporate Coordination</a></li>
+                        <li><a href="#services" onclick="openModal('modal-wedding')">Wedding Planning</a></li>
+                        <li><a href="#services" onclick="openModal('modal-birthday')">Birthday Parties</a></li>
+                        <li><a href="#services" onclick="openModal('modal-night')">Night Party Setup</a></li>
+                        <li><a href="#services" onclick="openModal('modal-university')">University Events</a></li>
+                        <li><a href="#services" onclick="openModal('modal-corporate')">Corporate Meetings</a></li>
+                        <li><a href="#services" onclick="openModal('modal-decor')">Floral & Stage Decor</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
+
+                <div class="footer-links">
+                    <h4>Contact Info</h4>
                     <ul>
-                        <li><i class="fab fa-whatsapp"></i> 03429042005</li>
-                        <li><i class="fas fa-map-marker-alt"></i> [ADD YOUR CITY], Pakistan</li>
+                        <li><i class="fab fa-whatsapp" style="color: var(--primary-gold); margin-right: 8px;"></i> 03429042005</li>
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--primary-gold); margin-right: 8px;"></i> [ADD YOUR CITY], Pakistan</li>
+                        <li><i class="fas fa-clock" style="color: var(--primary-gold); margin-right: 8px;"></i> Mon - Sun: 9:00 AM - 10:00 PM</li>
                     </ul>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2026 Events by Sanaullah. All Rights Reserved.</p>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Events by Sanaullah. All Rights Reserved. Designed for performance and local Search Engine Optimization.</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating WhatsApp CTA -->
-    <a href="https://wa.me/923429042005" target="_blank" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+    <a href="https://wa.me/923429042005" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat with Events by Sanaullah on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Basic Interactions JS -->
+    <!-- Service Detail Modals (Simulated Sub-pages) -->
+    
+    <!-- Wedding Modal -->
+    <div class="modal" id="modal-wedding">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-wedding')">&times;</span>
+            <div class="modal-body">
+                <h2>Wedding Event Management</h2>
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wedding Management Setup">
+                <p>We provide full wedding management services designed to make your special day effortless. From traditional Mehndi nights to grand Baraats and elegant Walimas, our team manages venue layouts, stage backdrops, catering arrangements, and lighting.</p>
+                <div class="modal-features">
+                    <div class="modal-feature-item">Custom Stage & Backdrop Setup</div>
+                    <div class="modal-feature-item">Fresh & Artificial Floral Setup</div>
+                    <div class="modal-feature-item">Mehndi & Sangeet Arrangements</div>
+                    <div class="modal-feature-item">Baraat & Walima Management</div>
+                    <div class="modal-feature-item">Catering & Banquet Service</div>
+                    <div class="modal-feature-item">Photography & Video Coverage</div>
+                </div>
+                <a href="#contact" onclick="closeModal('modal-wedding')" class="btn btn-gold" style="margin-top: 15px;">Book This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Birthday Modal -->
+    <div class="modal" id="modal-birthday">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-birthday')">&times;</span>
+            <div class="modal-body">
+                <h2>Birthday Party Planning</h2>
+                <img src="https://images.unsplash.com/photo-1530103862676-de8892bf309c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Birthday Party Decoration">
+                <p>Celebrate birthdays with customized setup designs! We specialize in theme parties for kids, elegant setups for adult birthdays, balloon garlands, cake table backdrops, ambient sound, and activity arrangements.</p>
+                <div class="modal-features">
+                    <div class="modal-feature-item">Kids Themed Backdrops</div>
+                    <div class="modal-feature-item">Adult Birthday Setup</div>
+                    <div class="modal-feature-item">Balloon Arches & Decor</div>
+                    <div class="modal-feature-item">Cake Table Framing</div>
+                    <div class="modal-feature-item">Lighting & Sound Setup</div>
+                    <div class="modal-feature-item">Custom Entrance Signage</div>
+                </div>
+                <a href="#contact" onclick="closeModal('modal-birthday')" class="btn btn-gold" style="margin-top: 15px;">Book This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Night Party Modal -->
+    <div class="modal" id="modal-night">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-night')">&times;</span>
+            <div class="modal-body">
+                <h2>Night Party Management</h2>
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Night Event DJ Setup">
+                <p>Transform your evening events into memorable experiences with lighting, dance stage setups, high-output sound systems, DJ integration, and private event privacy arrangements.</p>
+                <div class="modal-features">
+                    <div class="modal-feature-item">DJ & Sound Systems</div>
+                    <div class="modal-feature-item">Concert & Stage Lighting</div>
+                    <div class="modal-feature-item">Dance Floor Setups</div>
+                    <div class="modal-feature-item">Private & Social Parties</div>
+                    <div class="modal-feature-item">University Night Functions</div>
+                    <div class="modal-feature-item">Security Coordination</div>
+                </div>
+                <a href="#contact" onclick="closeModal('modal-night')" class="btn btn-gold" style="margin-top: 15px;">Book This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- University Modal -->
+    <div class="modal" id="modal-university">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-university')">&times;</span>
+            <div class="modal-body">
+                <h2>University & Campus Events</h2>
+                <img src="https://images.unsplash.com/photo-1523580494112-071d169408fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="University Event Management">
+                <p>We work with student committees and administration to host welcome parties, farewell galas, cultural shows, and annual award ceremonies with systematic crowd management and equipment support.</p>
+                <div class="modal-features">
+                    <div class="modal-feature-item">Welcome & Farewell Galas</div>
+                    <div class="modal-feature-item">High-Capacity Sound Setups</div>
+                    <div class="modal-feature-item">Stage & Backdrop Structures</div>
+                    <div class="modal-feature-item">Cultural Event Decor</div>
+                    <div class="modal-feature-item">Award Ceremonies</div>
+                    <div class="modal-feature-item">Event Photography Support</div>
+                </div>
+                <a href="#contact" onclick="closeModal('modal-university')" class="btn btn-gold" style="margin-top: 15px;">Book This Service</a>
+            </div>
+        </div>
+    </modal>
+
+    <!-- Corporate Modal -->
+    <div class="modal" id="modal-corporate">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-corporate')">&times;</span>
+            <div class="modal-body">
+                <h2>Corporate Event Management</h2>
+                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate Conference Setup">
+                <p>Maintain your professional standard with our tailored business event planning. We handle conferences, product launch stage branding, corporate dinners, and business seminars with precise execution.</p>
+                <div class="modal-features">
+                    <div class="modal-feature-item">Conferences & Seminars</div>
+                    <div class="modal-feature-item">Product Launch Backdrops</div>
+                    <div class="modal-feature-item">AV Screen & Podium Setups</div>
+                    <div class="modal-feature-item">Company Annual Dinners</div>
+                    <div class="modal-feature-item">Corporate Gifting & Branding</div>
+                    <div class="modal-feature-item">Executive Catering Layouts</div>
+                </div>
+                <a href="#contact" onclick="closeModal('modal-corporate')" class="btn btn-gold" style="margin-top: 15px;">Book This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Decor Modal -->
+    <div class="modal" id="modal-decor">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-decor')">&times;</span>
+            <div class="modal-body">
+                <h2>Stage, Floral & Ambient Decor</h2>
+                <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Floral Stage Decor">
+                <p>Elevate the aesthetic of your event space. We focus on structural stage building, fresh rose and orchid arrangements, lighting setups, walkways, and entrance decor.</p>
+                <div class="modal-features">
+                    <div class="modal-feature-item">Custom Backdrop Construction</div>
+                    <div class="modal-feature-item">Fresh & Synthetic Florals</div>
+                    <div class="modal-feature-item">Uplighting & Mood Lights</div>
+                    <div class="modal-feature-item">Entrance Walkways & Arches</div>
+                    <div class="modal-feature-item">VIP Table Setup Design</div>
+                    <div class="modal-feature-item">Thematic Furniture Hire</div>
+                </div>
+                <a href="#contact" onclick="closeModal('modal-decor')" class="btn btn-gold" style="margin-top: 15px;">Book This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
     <script>
-        // Mobile Menu Toggle
-        document.getElementById('mobileToggle').addEventListener('click', function() {
-            document.getElementById('navMenu').classList.toggle('active');
+        // Navigation Mobile Menu Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
         });
 
-        // FAQ Toggle
-        function toggleFaq(element) {
-            const answer = element.nextElementSibling;
-            const icon = element.querySelector('i');
+        // Close mobile nav when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion Functionality
+        function toggleFaq(header) {
+            const item = header.parentElement;
+            const isActive = item.classList.contains('active');
             
-            if (answer.style.display === "block") {
-                answer.style.display = "none";
-                icon.classList.remove('fa-chevron-up');
-                icon.classList.add('fa-chevron-down');
-            } else {
-                answer.style.display = "block";
-                icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
+            // Close all items
+            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+            
+            // Toggle current
+            if (!isActive) {
+                item.classList.add('active');
             }
         }
+
+        // Gallery Filter Functionality
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Budget Calculator Functionality
+        function calculateBudget() {
+            const type = document.getElementById('calc-type').value;
+            const guests = parseInt(document.getElementById('calc-guests').value);
+            const tier = document.getElementById('calc-tier').value;
+            
+            let baseRate = 800; // PKR per guest base
+            
+            if (type === 'wedding') baseRate = 1200;
+            if (type === 'corporate') baseRate = 1000;
+            if (type === 'birthday') baseRate = 600;
+
+            let multiplier = 1;
+            if (tier === 'premium') multiplier = 1.4;
+            if (tier === 'luxury') multiplier = 2.0;
+
+            let minEstimate = Math.round(guests * baseRate * multiplier);
+            let maxEstimate = Math.round(minEstimate * 1.35);
+
+            document.getElementById('calc-output').innerText = 
+                `PKR ${minEstimate.toLocaleString()} - PKR ${maxEstimate.toLocaleString()}`;
+        }
+
+        // Service Detail Modal Management
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside of modal box
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        };
     </script>
 </body>
 </html>
