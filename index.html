@@ -1,540 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events By Sanaullah | Event Management & Blog</title>
-  <style>
-    /* CSS Styles Root & Resets */
-    :root {
-      --primary-color: #8b0000;
-      --secondary-color: #d4af37;
-      --dark-color: #1a1a1a;
-      --light-color: #f9f9f9;
-      --gray-color: #666;
-      --border-color: #e0e0e0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Event Management Services | Events by Sanaullah</title>
+    <meta name="description" content="Creating unforgettable weddings, birthday parties, night events, university functions, and special occasions with professional planning and creative decoration.">
+    <meta name="keywords" content="event management, event planner, wedding planner, birthday party planner, event decoration, party planner, Pakistan">
+    <link rel="canonical" href="https://www.yourdomain.com/">
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Event Management Services | Events by Sanaullah">
+    <meta property="og:description" content="Professional event planning and creative decorations for all your special occasions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourdomain.com/">
+    
+    <!-- Google Fonts: Playfair Display (Luxury) & Montserrat (Clean Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    <!-- JSON-LD Local SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Events by Sanaullah",
+      "image": "https://www.yourdomain.com/logo.jpg",
+      "@id": "https://www.yourdomain.com/",
+      "url": "https://www.yourdomain.com/",
+      "telephone": "+923429042005",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[ADD BUSINESS ADDRESS]",
+        "addressLocality": "[ADD YOUR CITY]",
+        "addressRegion": "Punjab",
+        "postalCode": "[ADD ZIP]",
+        "addressCountry": "PK"
+      },
+      "areaServed": ["[ADD CITIES/AREAS]"],
+      "sameAs": [
+        "https://www.instagram.com/reels/DbqpsHXgzbP/",
+        "https://www.tiktok.com/en/",
+        "[ADD THE CORRECT PINTEREST PROFILE URL HERE]"
+      ]
     }
+    </script>
 
-    body {
-      background-color: var(--light-color);
-      color: var(--dark-color);
-      line-height: 1.6;
-    }
+    <style>
+        /* CSS Variables for Luxury Theme */
+        :root {
+            --primary-color: #D4AF37; /* Metallic Gold */
+            --primary-dark: #aa8c2c;
+            --secondary-color: #1a1a1a; /* Dark Charcoal */
+            --bg-light: #fafafa;
+            --text-color: #333333;
+            --white: #ffffff;
+            --whatsapp-green: #25D366;
+        }
 
-    /* Container */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+        /* Reset & Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text-color); line-height: 1.6; background-color: var(--bg-light); }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--secondary-color); margin-bottom: 1rem; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        img { max-width: 100%; height: auto; display: block; }
+        
+        /* Utility Classes */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section-padding { padding: 80px 0; }
+        .text-center { text-align: center; }
+        .btn { display: inline-block; padding: 12px 30px; font-weight: 600; border-radius: 4px; cursor: pointer; transition: 0.3s; }
+        .btn-primary { background: var(--primary-color); color: var(--white); border: 2px solid var(--primary-color); }
+        .btn-primary:hover { background: transparent; color: var(--primary-color); }
+        .btn-whatsapp { background: var(--whatsapp-green); color: var(--white); }
+        .btn-whatsapp:hover { background: #128C7E; }
 
-    /* Header & Navigation */
-    header {
-      background-color: var(--dark-color);
-      color: #fff;
-      padding: 20px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+        /* Navigation */
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--primary-color); }
+        .nav-menu { display: flex; list-style: none; gap: 20px; }
+        .nav-menu a { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-menu a:hover { color: var(--primary-color); }
+        .mobile-toggle { display: none; font-size: 24px; cursor: pointer; }
 
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+        /* Hero Section */
+        .hero { position: relative; background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover; height: 90vh; display: flex; align-items: center; text-align: center; color: var(--white); }
+        .hero h1 { color: var(--white); font-size: 3.5rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px; font-weight: 300; }
+        .hero-btns { display: flex; gap: 20px; justify-content: center; }
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: var(--secondary-color);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+        /* Services Grid */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .service-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-10px); }
+        .service-img { height: 200px; width: 100%; object-fit: cover; }
+        .service-content { padding: 25px; text-align: center; }
+        .service-content h3 { font-size: 1.5rem; }
+        .service-link { color: var(--primary-color); font-weight: 600; text-transform: uppercase; font-size: 14px; margin-top: 15px; display: inline-block; }
 
-    nav ul {
-      display: flex;
-      list-style: none;
-    }
+        /* Trust / About Section */
+        .trust-section { background: var(--secondary-color); color: var(--white); }
+        .trust-section h2 { color: var(--primary-color); }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        .feature-item { text-align: center; padding: 20px; }
+        .feature-item i { font-size: 40px; color: var(--primary-color); margin-bottom: 15px; }
 
-    nav ul li {
-      margin-left: 20px;
-    }
+        /* Gallery Grid */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 30px; }
+        .gallery-item img { border-radius: 8px; height: 250px; width: 100%; object-fit: cover; transition: 0.3s; }
+        .gallery-item img:hover { transform: scale(1.05); opacity: 0.9; }
 
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
+        /* Blog Section Styles */
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 40px; }
+        .blog-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+        .blog-img { height: 220px; width: 100%; object-fit: cover; }
+        .blog-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .blog-tag { display: inline-block; background: #f0e6c2; color: var(--secondary-color); font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; margin-bottom: 10px; align-self: flex-start; }
+        .blog-title { font-size: 1.25rem; margin-bottom: 10px; line-height: 1.4; }
+        .blog-excerpt { font-size: 14px; color: #666; margin-bottom: 15px; flex-grow: 1; }
+        .blog-read-more { color: var(--primary-color); font-weight: 600; font-size: 14px; cursor: pointer; text-transform: uppercase; background: none; border: none; text-align: left; padding: 0; }
+        .blog-full-content { display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 14px; color: #444; }
+        .blog-full-content h4 { font-size: 1.1rem; margin-top: 15px; margin-bottom: 5px; color: var(--secondary-color); }
+        .blog-full-content ul, .blog-full-content ol { margin-left: 20px; margin-bottom: 15px; }
+        .blog-full-content li { margin-bottom: 5px; }
 
-    nav ul li a:hover {
-      color: var(--secondary-color);
-    }
+        /* FAQ Section */
+        .faq-item { background: var(--white); margin-bottom: 15px; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+        .faq-question { font-weight: 600; color: var(--secondary-color); cursor: pointer; display: flex; justify-content: space-between; }
+        .faq-answer { margin-top: 10px; display: none; color: #666; }
 
-    /* Blog Section Header */
-    .blog-header {
-      text-align: center;
-      padding: 60px 0 30px;
-    }
+        /* Contact Section */
+        .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .contact-form input, .contact-form select, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; }
+        .contact-info { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
 
-    .blog-header h1 {
-      font-size: 36px;
-      color: var(--primary-color);
-      margin-bottom: 10px;
-    }
+        /* Footer */
+        footer { background: var(--secondary-color); color: var(--white); padding: 60px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .footer-col h4 { color: var(--primary-color); }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a:hover { color: var(--primary-color); }
+        .social-icons { display: flex; gap: 15px; margin-top: 20px; }
+        .social-icons a { background: var(--primary-color); color: var(--secondary-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s; }
+        .social-icons a:hover { background: var(--white); }
+        .copyright { text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 14px; }
 
-    .blog-header p {
-      color: var(--gray-color);
-      max-width: 600px;
-      margin: 0 auto;
-    }
+        /* Floating WhatsApp Button */
+        .floating-whatsapp { position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp-green); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; transition: transform 0.3s; }
+        .floating-whatsapp:hover { transform: scale(1.1); color: white; }
 
-    /* Category Filter */
-    .filter-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 40px;
-    }
-
-    .filter-btn {
-      padding: 8px 18px;
-      background-color: #fff;
-      border: 1px solid var(--border-color);
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: all 0.3s ease;
-    }
-
-    .filter-btn:hover, .filter-btn.active {
-      background-color: var(--primary-color);
-      color: #fff;
-      border-color: var(--primary-color);
-    }
-
-    /* Blog Grid Layout */
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 30px;
-      margin-bottom: 60px;
-    }
-
-    .blog-card {
-      background-color: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .blog-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    }
-
-    .blog-img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .blog-content {
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-
-    .blog-category {
-      font-size: 12px;
-      text-transform: uppercase;
-      color: var(--secondary-color);
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    .blog-title {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: var(--dark-color);
-      line-height: 1.4;
-    }
-
-    .blog-excerpt {
-      font-size: 14px;
-      color: var(--gray-color);
-      margin-bottom: 15px;
-      flex-grow: 1;
-    }
-
-    .read-more-btn {
-      align-self: flex-start;
-      padding: 8px 16px;
-      background-color: transparent;
-      color: var(--primary-color);
-      border: 1px solid var(--primary-color);
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: all 0.3s;
-    }
-
-    .read-more-btn:hover {
-      background-color: var(--primary-color);
-      color: #fff;
-    }
-
-    /* Full Article Modal */
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.7);
-      z-index: 1000;
-      overflow-y: auto;
-      padding: 40px 20px;
-    }
-
-    .modal-content {
-      background-color: #fff;
-      max-width: 800px;
-      margin: 0 auto;
-      border-radius: 8px;
-      padding: 40px;
-      position: relative;
-    }
-
-    .close-btn {
-      position: absolute;
-      top: 20px;
-      right: 25px;
-      font-size: 28px;
-      cursor: pointer;
-      color: var(--gray-color);
-    }
-
-    .modal-body h1 {
-      color: var(--primary-color);
-      margin-bottom: 15px;
-      font-size: 28px;
-    }
-
-    .modal-body img {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      border-radius: 6px;
-      margin: 20px 0;
-    }
-
-    .modal-body h2 {
-      color: var(--dark-color);
-      margin: 20px 0 10px;
-      font-size: 20px;
-    }
-
-    .modal-body p, .modal-body ul, .modal-body ol {
-      margin-bottom: 15px;
-      color: #333;
-    }
-
-    .modal-body ul, .modal-body ol {
-      padding-left: 20px;
-    }
-
-    .cta-box {
-      background-color: #fdf8f0;
-      border-left: 4px solid var(--secondary-color);
-      padding: 20px;
-      margin-top: 30px;
-      font-weight: bold;
-    }
-
-    /* Footer */
-    footer {
-      background-color: var(--dark-color);
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 40px;
-    }
-  </style>
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: var(--white); padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .nav-menu.active { display: flex; }
+            .mobile-toggle { display: block; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero-btns { flex-direction: column; }
+            .contact-wrapper { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <div class="container nav-container">
-      <div class="logo">Events By Sanaullah</div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#blog">Blogs</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Blog Hub Section -->
-  <section id="blog" class="container">
-    <div class="blog-header">
-      <h1>Event Planning Guides & Ideas</h1>
-      <p>Expert tips, décor inspiration, and event management checklists for your special occasions in Pakistan.</p>
-    </div>
-
-    <!-- Hub Categories -->
-    <div class="filter-container">
-      <button class="filter-btn active" onclick="filterBlogs('all')">All</button>
-      <button class="filter-btn" onclick="filterBlogs('wedding')">Weddings</button>
-      <button class="filter-btn" onclick="filterBlogs('birthday')">Birthdays</button>
-      <button class="filter-btn" onclick="filterBlogs('night')">Night Parties</button>
-      <button class="filter-btn" onclick="filterBlogs('institutional')">University & Corporate</button>
-      <button class="filter-btn" onclick="filterBlogs('tips')">Planning Tips</button>
-    </div>
-
-    <!-- Grid Container -->
-    <div class="blog-grid">
-
-      <!-- Blog Card 1 -->
-      <article class="blog-card" data-category="wedding">
-        <img src="https://reviewmaster.pk/ritz-marquee-gari-shahu-review-photos/" alt="Elegant Pakistani wedding marquee decorated with floral installations" class="blog-img" onerror="this.src='https://via.placeholder.com/400x200?text=Wedding+Event'">
-        <div class="blog-content">
-          <span class="blog-category">Wedding</span>
-          <h2 class="blog-title">How to Plan a Memorable Wedding Event in Pakistan</h2>
-          <p class="blog-excerpt">A wedding becomes easier to enjoy when the planning is built around the guest experience. From venue walk-throughs to coordination...</p>
-          <button class="read-more-btn" onclick="openModal('modal-1')">Read Article</button>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="/" class="logo">Events by Sanaullah</a>
+            <i class="fas fa-bars mobile-toggle" id="mobileToggle"></i>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
         </div>
-      </article>
+    </header>
 
-      <!-- Blog Card 2 -->
-      <article class="blog-card" data-category="wedding">
-        <img src="https://a2zeventssolutions.com/portfolio/dholki-diaries-a-splash-of-colours-home-decor-events-management-company-dholak-night-intimate-wedding-catering-setup-house-setup-wedding-management-company-a2z-events-solutions-laho/" alt="Colorful Dholki stage with floral arch" class="blog-img" onerror="this.src='https://via.placeholder.com/400x200?text=Mehndi+Decor'">
-        <div class="blog-content">
-          <span class="blog-category">Wedding</span>
-          <h2 class="blog-title">10 Beautiful Mehndi & Dholki Decoration Ideas</h2>
-          <p class="blog-excerpt">Discover 10 Mehndi and Dholki decoration ideas combining marigold florals, colorful drapes, jhoola seating, and lighting...</p>
-          <button class="read-more-btn" onclick="openModal('modal-2')">Read Article</button>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Professional Event Management & Event Planning Services</h1>
+            <p>Creating unforgettable weddings, birthday parties, night events, university functions and special occasions with professional planning, creative decoration, and memorable experiences.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Plan Your Event</a>
+                <a href="https://wa.me/923429042005" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Contact Us on WhatsApp</a>
+            </div>
         </div>
-      </article>
+    </section>
 
-      <!-- Blog Card 3 -->
-      <article class="blog-card" data-category="birthday">
-        <img src="https://thegrandkathiyawadi.com/" alt="Colorful indoor birthday party" class="blog-img" onerror="this.src='https://via.placeholder.com/400x200?text=Birthday+Party'">
-        <div class="blog-content">
-          <span class="blog-category">Birthday</span>
-          <h2 class="blog-title">How to Plan the Perfect Birthday Party for Kids and Adults</h2>
-          <p class="blog-excerpt">Plan a stress-free birthday party with ideas for themes, décor, cake tables, guest flow, entertainment, and food...</p>
-          <button class="read-more-btn" onclick="openModal('modal-3')">Read Article</button>
+    <!-- Services Overview -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Our Event Management Services</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto;">We offer comprehensive event planning and decoration services customized to fit your theme, budget, and vision.</p>
+            
+            <div class="services-grid">
+                <!-- Wedding -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Wedding Event Management and Decoration" class="service-img">
+                    <div class="service-content">
+                        <h3>Wedding Event Management</h3>
+                        <p>Complete wedding coordination, stage decoration, Mehndi, Baraat, and Walima setups.</p>
+                        <a href="#wedding-events" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Birthday -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8892bf309c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Birthday Party Planning and Decoration" class="service-img">
+                    <div class="service-content">
+                        <h3>Birthday Party Planning</h3>
+                        <p>Themed birthday parties for kids and adults, balloon decorations, and entertainment.</p>
+                        <a href="#birthday-parties" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Night Party -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Night Party and DJ Event Setup" class="service-img">
+                    <div class="service-content">
+                        <h3>Night Party Management</h3>
+                        <p>DJ events, lighting, sound systems, and private night parties.</p>
+                        <a href="#night-parties" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- University -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1523580494112-071d169408fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="University Event Coordination" class="service-img">
+                    <div class="service-content">
+                        <h3>University Events</h3>
+                        <p>Welcome parties, farewells, annual functions, and cultural events.</p>
+                        <a href="#university-events" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Corporate -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Corporate Event Meetings and Conferences" class="service-img">
+                    <div class="service-content">
+                        <h3>Corporate Events</h3>
+                        <p>Conferences, product launches, award ceremonies, and company dinners.</p>
+                        <a href="#corporate-events" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Decoration -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Event Floral and Stage Decoration" class="service-img">
+                    <div class="service-content">
+                        <h3>Floral & Stage Decoration</h3>
+                        <p>Premium floral arrangements, stage designs, and ambient lighting.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </article>
+    </section>
 
-      <!-- Blog Card 4 -->
-      <article class="blog-card" data-category="night">
-        <img src="https://www.urbanangelslondon.com/events.html" alt="Night party setup with purple lighting" class="blog-img" onerror="this.src='https://via.placeholder.com/400x200?text=Night+Party'">
-        <div class="blog-content">
-          <span class="blog-category">Night Parties</span>
-          <h2 class="blog-title">How to Organize a Stylish Night Party</h2>
-          <p class="blog-excerpt">Learn how to organize a stylish night party with smart lighting, décor, music, seating, and guest flow management...</p>
-          <button class="read-more-btn" onclick="openModal('modal-4')">Read Article</button>
+    <!-- Trust / Why Choose Us -->
+    <section class="trust-section section-padding" id="about">
+        <div class="container">
+            <h2 class="text-center">Why Choose Events by Sanaullah?</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto;">We specialize in professional event planning and management, turning your vision into a reality with creative decoration and reliable coordination.</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-gem"></i>
+                    <h3>Creative Designs</h3>
+                    <p>Customized packages and unique decoration themes tailored to your specific event.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>Complete Coordination</h3>
+                    <p>From planning to execution, our professional team handles every single detail.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-star"></i>
+                    <h3>Customer Satisfaction</h3>
+                    <p>Dedicated to delivering high-quality, memorable experiences for you and your guests.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tags"></i>
+                    <h3>Customized Packages</h3>
+                    <p>Flexible pricing and event packages to accommodate various budgets without compromising quality.</p>
+                </div>
+            </div>
         </div>
-      </article>
+    </section>
 
-      <!-- Blog Card 5 -->
-      <article class="blog-card" data-category="institutional">
-        <img src="https://www.pu.edu.pk/home/section/exam/8440" alt="University annual dinner event" class="blog-img" onerror="this.src='https://via.placeholder.com/400x200?text=University+Event'">
-        <div class="blog-content">
-          <span class="blog-category">Institutional</span>
-          <h2 class="blog-title">University Event Management: Campus Guide</h2>
-          <p class="blog-excerpt">A practical guide covering orientation programs, seminars, societies, award nights, stage setup, and registration...</p>
-          <button class="read-more-btn" onclick="openModal('modal-5')">Read Article</button>
+    <!-- Gallery Placeholder -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Our Event Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Use descriptive ALT tags for SEO -->
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="Elegant Wedding Stage Decoration Setup"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="Birthday Party Theme Decoration with Balloons"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="DJ Night Party Lighting and Dance Floor"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="Corporate Conference Setup and Catering"></div>
+            </div>
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="#contact" class="btn btn-primary">View Full Gallery</a>
+            </div>
         </div>
-      </article>
+    </section>
 
-      <!-- Blog Card 6 -->
-      <article class="blog-card" data-category="wedding">
-        <img src="https://www.shadiyana.pk/decor/dimensional-event-planner" alt="Elegant floral Engagement setup" class="blog-img" onerror="this.src='https://via.placeholder.com/400x200?text=Nikah+Walima'">
-        <div class="blog-content">
-          <span class="blog-category">Wedding</span>
-          <h2 class="blog-title">Engagement, Nikah & Walima: Elegant Celebrations</h2>
-          <p class="blog-excerpt">Get elegant Engagement, Nikah, and Walima event ideas for stage décor, floral styling, soft lighting, and photo zones...</p>
-          <button class="read-more-btn" onclick="openModal('modal-6')">Read Article</button>
+    <!-- Blog Section -->
+    <section id="blog" class="section-padding" style="background: #f4f4f4;">
+        <div class="container">
+            <h2 class="text-center">Latest Event Planning Blogs & Guides</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 30px;">Expert insights, décor ideas, and practical guides for planning unforgettable weddings, parties, corporate, and campus events[cite: 2].</p>
+            
+            <div class="blog-grid">
+                <!-- Blog 1 -->
+                <article class="blog-card">
+                    <img src="https://reviewmaster.pk/wp-content/uploads/2021/08/Ritz-Marquee-Garhi-Shahu-Lahore.jpg" alt="Elegant Pakistani wedding marquee decorated with floral installations" class="blog-img" onerror="this.src='https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500'">
+                    <div class="blog-body">
+                        <span class="blog-tag">Wedding Planning</span>
+                        <h3 class="blog-title">How to Plan a Memorable Wedding Event in Pakistan</h3>
+                        <p class="blog-excerpt">A wedding becomes easier to enjoy when the planning is built around the guest experience. From venue walk-throughs to final send-offs[cite: 2]...</p>
+                        <button class="blog-read-more" onclick="toggleBlogContent(this)">Read Full Article <i class="fas fa-chevron-down"></i></button>
+                        <div class="blog-full-content">
+                            <h4>Start with the guest experience</h4>
+                            <p>Before choosing colors and flowers, decide what you want guests to feel[cite: 2]. A welcoming entrance, easy-to-follow layout, comfortable seating, clear stage visibility and a well-timed program can make a bigger difference than expensive decoration alone[cite: 2].</p>
+                            <h4>Choose a venue that fits the program</h4>
+                            <p>The venue should match your guest count and function type[cite: 2]. Walk the venue with a professional event manager before finalizing design[cite: 2].</p>
+                            <h4>Create a consistent décor story</h4>
+                            <p>Pick one main visual direction—classic floral, modern minimal, or traditional—and repeat it through the stage, entrance, seating, and lighting[cite: 2].</p>
+                            <h4>Plan the timeline in detail</h4>
+                            <p>Prepare a written run sheet for setup, vendor arrival, guest entry, ceremony, dinner, and entertainment[cite: 2]. Keep short buffers for live event timing flexibility[cite: 2].</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card">
+                    <img src="https://a2zeventssolutions.com/wp-content/uploads/2021/06/Colorful-Mehndi-Stage-Setup-A2Z-Events-Solutions.jpg" alt="Colorful Dholki stage with floral arch and bright drapes" class="blog-img" onerror="this.src='https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=500'">
+                    <div class="blog-body">
+                        <span class="blog-tag">Mehndi & Dholki</span>
+                        <h3 class="blog-title">10 Beautiful Mehndi & Dholki Decoration Ideas for a Modern Pakistani Wedding</h3>
+                        <p class="blog-excerpt">Mehndi and Dholki events are where color, music, and personality shine. Combine traditional details with clean visual structure[cite: 2].</p>
+                        <button class="blog-read-more" onclick="toggleBlogContent(this)">Read Full Article <i class="fas fa-chevron-down"></i></button>
+                        <div class="blog-full-content">
+                            <ol>
+                                <li><strong>Marigold & Floral Framing:</strong> Frame the stage or entrance for a strong focal point[cite: 2].</li>
+                                <li><strong>Colorful Drapes:</strong> Use pink, yellow, orange, and magenta drapes for festive vibes[cite: 2].</li>
+                                <li><strong>Jhoola or Signature Seating:</strong> A decorated swing acts as a recognizable focal point[cite: 2].</li>
+                                <li><strong>Fairy Lights & Lanterns:</strong> Layered lighting shows depth in evening photos[cite: 2].</li>
+                                <li><strong>Traditional Props:</strong> Add Dholaks, umbrellas, bangles, and cushions selectively[cite: 2].</li>
+                                <li><strong>Guest Lounge Corner:</strong> Create a relaxed corner with cushions and small tables[cite: 2].</li>
+                                <li><strong>Photo Wall:</strong> Dedicated photo walls make social sharing seamless[cite: 2].</li>
+                                <li><strong>Coordinated Table Styling:</strong> Repeat event palettes in runners and centerpieces[cite: 2].</li>
+                                <li><strong>Entrance Statement:</strong> Floral arches or light canopies make a great first impression[cite: 2].</li>
+                                <li><strong>One Clean Hero Area:</strong> Focus your budget on one hero stage or main photo area[cite: 2].</li>
+                            </ol>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8892bf309c?w=500" alt="Colorful indoor birthday party with balloon ceiling décor" class="blog-img">
+                    <div class="blog-body">
+                        <span class="blog-tag">Birthday Planning</span>
+                        <h3 class="blog-title">How to Plan the Perfect Birthday Party for Kids and Adults</h3>
+                        <p class="blog-excerpt">A great birthday party is about giving the guest of honor a fun experience while making execution effortless[cite: 2].</p>
+                        <button class="blog-read-more" onclick="toggleBlogContent(this)">Read Full Article <i class="fas fa-chevron-down"></i></button>
+                        <div class="blog-full-content">
+                            <h4>Design the room in zones</h4>
+                            <ul>
+                                <li><strong>Welcome Zone:</strong> Simple greeting sign and guest guidance[cite: 2].</li>
+                                <li><strong>Main Stage Zone:</strong> Birthday backdrop, cake table, and photo area[cite: 2].</li>
+                                <li><strong>Food Zone:</strong> Clear serving path with adequate queuing space[cite: 2].</li>
+                                <li><strong>Activity Zone:</strong> Games or entertainment placed away from delicate décor[cite: 2].</li>
+                            </ul>
+                            <h4>Plan the Cake Moment</h4>
+                            <p>Leave enough space around the cake table for candle lighting, serving tools, and group photographs[cite: 2].</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 4 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500" alt="Large evening party venue with ambient lighting and cocktail setup" class="blog-img">
+                    <div class="blog-body">
+                        <span class="blog-tag">Night Parties</span>
+                        <h3 class="blog-title">How to Organize a Stylish Night Party: Décor, Lighting, Music & Guest Experience</h3>
+                        <p class="blog-excerpt">Night events succeed when lighting, music, layout, and comfort work together to build peak energy[cite: 2].</p>
+                        <button class="blog-read-more" onclick="toggleBlogContent(this)">Read Full Article <i class="fas fa-chevron-down"></i></button>
+                        <div class="blog-full-content">
+                            <h4>Key Night Party Elements</h4>
+                            <ul>
+                                <li><strong>Use Lighting as a Tool:</strong> Blend ambient light, table accents, and dance floor spotlights[cite: 2].</li>
+                                <li><strong>Dance Floor First:</strong> Position DJ equipment safely with clear movement paths[cite: 2].</li>
+                                <li><strong>Comfortable Seating:</strong> Mix high tables, lounge seating, and standard chairs[cite: 2].</li>
+                                <li><strong>Music Progression:</strong> Build energy from arrival music up to peak DJ sets[cite: 2].</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 5 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1523580494112-071d169408fc?w=500" alt="University annual event stage setup" class="blog-img">
+                    <div class="blog-body">
+                        <span class="blog-tag">Campus Events</span>
+                        <h3 class="blog-title">University Event Management: A Practical Guide to Successful Campus Events</h3>
+                        <p class="blog-excerpt">Keep registration, stage management, AV, branding, and student flow organized for seamless campus events[cite: 2].</p>
+                        <button class="blog-read-more" onclick="toggleBlogContent(this)">Read Full Article <i class="fas fa-chevron-down"></i></button>
+                        <div class="blog-full-content">
+                            <h4>Essential Steps for Campus Success</h4>
+                            <ul>
+                                <li><strong>Registration Flow:</strong> Set check-in tables away from main stage entries[cite: 2].</li>
+                                <li><strong>Stage Setup:</strong> Coordinate backdrop, lectern, microphones, and presentation screens[cite: 2].</li>
+                                <li><strong>Technical Backups:</strong> Always test microphones, projectors, and slides prior to guest arrival[cite: 2].</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 6 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500" alt="Elegant floral event setup with circular backdrop" class="blog-img">
+                    <div class="blog-body">
+                        <span class="blog-tag">Engagement & Nikah</span>
+                        <h3 class="blog-title">Engagement, Nikah & Walima: How to Create an Elegant Celebration</h3>
+                        <p class="blog-excerpt">Refined celebrations look best with controlled palettes, intentional staging, and focused lighting choices[cite: 2].</p>
+                        <button class="blog-read-more" onclick="toggleBlogContent(this)">Read Full Article <i class="fas fa-chevron-down"></i></button>
+                        <div class="blog-full-content">
+                            <h4>Color Palettes with Restraint</h4>
+                            <ul>
+                                <li><strong>Soft White & Green:</strong> Fresh garden theme[cite: 2].</li>
+                                <li><strong>Champagne & Ivory:</strong> Classic luxury aesthetic[cite: 2].</li>
+                                <li><strong>Dusty Pink & Neutrals:</strong> Romantic atmosphere[cite: 2].</li>
+                                <li><strong>Deep Jewel Tones:</strong> Rich evening celebrations[cite: 2].</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 7 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=500" alt="Corporate conference stage with LED screen" class="blog-img">
+                    <div class="blog-body">
+                        <span class="blog-tag">Corporate Events</span>
+                        <h3 class="blog-title">Corporate Event Planning: From Seminar Setup to Guest Experience</h3>
+                        <p class="blog-excerpt">Corporate functions are judged by clarity, stage execution, effortless registration, and precise time keeping[cite: 2].</p>
+                        <button class="blog-read-more" onclick="toggleBlogContent(this)">Read Full Article <i class="fas fa-chevron-down"></i></button>
+                        <div class="blog-full-content">
+                            <h4>Key Focus Areas</h4>
+                            <p>Select theatre, classroom, or round-table seating tailored to session goals[cite: 2]. Treat AV, clickers, and microphones as mission-critical elements tested on strict schedules[cite: 2].</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 8 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=500" alt="Budget friendly event decor using lighting and draping" class="blog-img">
+                    <div class="blog-body">
+                        <span class="blog-tag">Event Budgeting</span>
+                        <h3 class="blog-title">How to Plan an Event on a Budget Without Making It Look Cheap</h3>
+                        <p class="blog-excerpt">Maximize visual value by focusing spending where guests notice most and using strategic lighting[cite: 2].</p>
+                        <button class="blog-read-more" onclick="toggleBlogContent(this)">Read Full Article <i class="fas fa-chevron-down"></i></button>
+                        <div class="blog-full-content">
+                            <h4>Budget Strategy Checklist</h4>
+                            <ul>
+                                <li>Spend on hero focal points (Stage or Entrance)[cite: 2].</li>
+                                <li>Use warm ambient lighting to enhance simpler décor[cite: 2].</li>
+                                <li>Keep a small contingency reserve for unexpected changes[cite: 2].</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 9 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=500" alt="Event photography and social media backdrop" class="blog-img">
+                    <div class="blog-body">
+                        <span class="blog-tag">Content & Media</span>
+                        <h3 class="blog-title">Event Photography & Social Media: How to Make Your Event More Shareable</h3>
+                        <p class="blog-excerpt">Design your venue with clean camera backgrounds, photo zones, and lighting optimized for social sharing[cite: 2].</p>
+                        <button class="blog-read-more" onclick="toggleBlogContent(this)">Read Full Article <i class="fas fa-chevron-down"></i></button>
+                        <div class="blog-full-content">
+                            <h4>Camera-Ready Setup</h4>
+                            <p>Build a signature photo wall with neon or floral arches, and plan video captures for stage reveals, arrivals, and guest reactions[cite: 2].</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 10 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=500" alt="Event planning checklist and setup" class="blog-img">
+                    <div class="blog-body">
+                        <span class="blog-tag">Planning Checklist</span>
+                        <h3 class="blog-title">The Ultimate Event Planning Checklist: What to Book, Build and Confirm</h3>
+                        <p class="blog-excerpt">Organize venue booking, vendor coordination, staging, and technical setup with a structured timeline[cite: 2].</p>
+                        <button class="blog-read-more" onclick="toggleBlogContent(this)">Read Full Article <i class="fas fa-chevron-down"></i></button>
+                        <div class="blog-full-content">
+                            <h4>Timeline Highlights</h4>
+                            <ul>
+                                <li><strong>6-8 Weeks:</strong> Confirm date, budget, venue, and service team[cite: 2].</li>
+                                <li><strong>3-4 Weeks:</strong> Finalize stage layout, catering, RSVP tracking, and AV[cite: 2].</li>
+                                <li><strong>1-2 Weeks:</strong> Confirm arrival times, seating charts, and weather backups[cite: 2].</li>
+                                <li><strong>On Event Day:</strong> Perform complete venue walkthrough prior to guest arrival[cite: 2].</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
-      </article>
+    </section>
 
-      <!-- Blog Card 7 -->
-      <article class="blog-card" data-category="institutional">
-        <img src="https://www.linkedin.com/video/live/urn%3Ali%3AugcPost%3A7418881805195489280/" alt="Corporate conference stage with LED screen" class="blog-img" onerror="this.src='https://via.placeholder.com/400x200?text=Corporate+Event'">
-        <div class="blog-content">
-          <span class="blog-category">Institutional</span>
-          <h2 class="blog-title">Corporate Event Planning: Seminar to Experience</h2>
-          <p class="blog-excerpt">Plan professional corporate events with a clear guide to venue setup, stage branding, registration, and AV management...</p>
-          <button class="read-more-btn" onclick="openModal('modal-7')">Read Article</button>
+    <!-- FAQ Section -->
+    <section class="section-padding" style="background: var(--bg-light);">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">What services does Events by Sanaullah provide? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">We offer comprehensive event management services including wedding planning, birthday party decoration, night parties, university events, corporate events, stage decoration, lighting, and catering.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Do you manage complete wedding events? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Yes, we provide end-to-end wedding event management. This includes planning, stage decoration, floral arrangements, catering, and lighting for Mehndi, Baraat, and Walima events.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Do you provide customized event packages? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Absolutely. We understand that every event is unique, so we create customized packages based on your guest count, venue, theme, and budget.</div>
+            </div>
         </div>
-      </article>
+    </section>
 
-      <!-- Blog Card 8 -->
-      <article class="blog-card" data-category="tips">
-        <img src="https://www.shadiyana.pk/wedding-venues/margalla-grande-e-11" alt="Elegant event décor using floral arches" class="blog-img" onerror="this.src='https://via.placeholder.com/400x200?text=Budget+Planning'">
-        <div class="blog-content">
-          <span class="blog-category">Planning Tips</span>
-          <h2 class="blog-title">How to Plan an Event on a Budget Without Looking Cheap</h2>
-          <p class="blog-excerpt">Learn how to plan an impressive event on a realistic budget by prioritizing the venue, focal décor, and smart lighting...</p>
-          <button class="read-more-btn" onclick="openModal('modal-8')">Read Article</button>
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Plan Your Event Today</h2>
+            <div class="contact-wrapper">
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Get a Free Event Consultation</h3>
+                    <p style="margin-bottom: 20px;">Contact us to discuss your upcoming event, request pricing, or schedule a meeting.</p>
+                    
+                    <a href="https://wa.me/923429042005" target="_blank" class="btn btn-whatsapp" style="display: block; text-align: center; font-size: 1.1rem; padding: 15px; margin-bottom: 30px;">
+                        <i class="fab fa-whatsapp"></i> Chat With Us on WhatsApp
+                    </a>
+                    
+                    <p><i class="fas fa-phone" style="color: var(--primary-color);"></i> <strong>Phone:</strong> 03429042005</p>
+                    <p><i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i> <strong>Location:</strong> [ADD YOUR CITY], Pakistan</p>
+                    <p><i class="fas fa-globe" style="color: var(--primary-color);"></i> <strong>Service Areas:</strong> [ADD CITIES/AREAS]</p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <input type="email" name="email" placeholder="Email Address">
+                        
+                        <select name="event_type" required>
+                            <option value="">Select Event Type</option>
+                            <option value="Wedding">Wedding Event</option>
+                            <option value="Birthday">Birthday Party</option>
+                            <option value="Night Party">Night Party</option>
+                            <option value="University">University Event</option>
+                            <option value="Corporate">Corporate Event</option>
+                            <option value="Other">Other Social Function</option>
+                        </select>
+                        
+                        <div style="display: flex; gap: 15px;">
+                            <input type="date" name="event_date" required style="width: 50%;">
+                            <input type="number" name="guests" placeholder="No. of Guests" style="width: 50%;">
+                        </div>
+                        
+                        <input type="text" name="budget" placeholder="Estimated Budget (Optional)">
+                        <textarea name="message" rows="4" placeholder="Tell us about your event vision..."></textarea>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Event Pricing</button>
+                    </form>
+                </div>
+
+            </div>
         </div>
-      </article>
+    </section>
 
-      <!-- Blog Card 9 -->
-      <article class="blog-card" data-category="tips">
-        <img src="https://www.tlc-ltd.co.uk/private-parties-cheshire/" alt="Luxury party setup with dramatic lighting" class="blog-img" onerror="this.src='https://via.placeholder.com/400x200?text=Event+Photography'">
-        <div class="blog-content">
-          <span class="blog-category">Planning Tips</span>
-          <h2 class="blog-title">Event Photography & Social Media Shareability</h2>
-          <p class="blog-excerpt">Learn how to plan event photography, social content, branded photo zones, and short-form videos for online impact...</p>
-          <button class="read-more-btn" onclick="openModal('modal-9')">Read Article</button>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 15px;">Events by Sanaullah</h4>
+                    <p>Professional event management, creative decoration, and reliable coordination for your most memorable days.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/reels/DbqpsHXgzbP/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/en/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="[ADD PINTEREST URL]" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#gallery">Event Gallery</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#wedding-events">Wedding Event Management</a></li>
+                        <li><a href="#birthday-parties">Birthday Party Planning</a></li>
+                        <li><a href="#night-parties">Night Party Management</a></li>
+                        <li><a href="#university-events">University Event Setup</a></li>
+                        <li><a href="#corporate-events">Corporate Coordination</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fab fa-whatsapp"></i> 03429042005</li>
+                        <li><i class="fas fa-map-marker-alt"></i> [ADD YOUR CITY], Pakistan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Events by Sanaullah. All Rights Reserved.</p>
+            </div>
         </div>
-      </article>
+    </footer>
 
-      <!-- Blog Card 10 -->
-      <article class="blog-card" data-category="tips">
-        <img src="https://www.olx.com.pk/karachi_g4060695/services_c619/q-birthday-decoration" alt="Birthday party setup with balloon arch" class="blog-img" onerror="this.src='https://via.placeholder.com/400x200?text=Event+Checklist'">
-        <div class="blog-content">
-          <span class="blog-category">Planning Tips</span>
-          <h2 class="blog-title">The Ultimate Event Planning Checklist</h2>
-          <p class="blog-excerpt">Use this practical event planning checklist to organize the venue, budget, guest list, vendors, and timeline step-by-step...</p>
-          <button class="read-more-btn" onclick="openModal('modal-10')">Read Article</button>
-        </div>
-      </article>
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/923429042005" target="_blank" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-    </div>
-  </section>
+    <!-- Basic Interactions JS -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobileToggle').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
 
-  <!-- MODALS FOR FULL BLOG CONTENT -->
-
-  <!-- Modal 1 -->
-  <div id="modal-1" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeModal('modal-1')">&times;</span>
-      <div class="modal-body">
-        <h1>How to Plan a Memorable Wedding Event in Pakistan</h1>
-        <img src="https://reviewmaster.pk/ritz-marquee-gari-shahu-review-photos/" alt="Wedding Setup" onerror="this.src='https://via.placeholder.com/800x400?text=Wedding+Setup'">
-        <p>A wedding becomes easier to enjoy when the planning is built around the guest experience. From the first venue walk-through to the final send-off, a professional plan connects décor, timing, seating, food, photography, and coordination into one smooth celebration.</p>
-        <h2>Start with the guest experience</h2>
-        <p>Before choosing colors and flowers, decide what you want guests to feel. A welcoming entrance, an easy-to-follow layout, comfortable seating, clear stage visibility, and a well-timed program can make a bigger difference than expensive decoration alone.</p>
-        <h2>Choose a venue that fits the program</h2>
-        <p>The venue should match your guest count and the type of wedding function. Ensure stage views are clear and dining access is comfortable for everyone.</p>
-        <h2>Plan the timeline in detail</h2>
-        <p>Prepare a written run sheet for setup, vendor arrival, family photographs, guest entry, ceremony moments, dinner service, and speeches.</p>
-        <div class="cta-box">
-          Planning a wedding? Contact <strong>Events By Sanaullah</strong> to discuss your guest count, venue, theme, and priorities!
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div id="modal-2" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeModal('modal-2')">&times;</span>
-      <div class="modal-body">
-        <h1>10 Beautiful Mehndi & Dholki Decoration Ideas for a Modern Pakistani Wedding</h1>
-        <img src="https://a2zeventssolutions.com/portfolio/dholki-diaries-a-splash-of-colours-home-decor-events-management-company-dholak-night-intimate-wedding-catering-setup-house-setup-wedding-management-company-a2z-events-solutions-laho/" alt="Mehndi Setup" onerror="this.src='https://via.placeholder.com/800x400?text=Mehndi+Setup'">
-        <ol>
-          <li><strong>Marigold and floral framing:</strong> Use seasonal flowers to frame focal points.</li>
-          <li><strong>Colorful drapes:</strong> Vibrant pinks, yellows, and greens create a festive mood.</li>
-          <li><strong>Jhoola seating:</strong> A decorated swing acts as a primary photo spot.</li>
-          <li><strong>Fairy lights and lanterns:</strong> Adds atmosphere for evening celebrations.</li>
-          <li><strong>Traditional props:</strong> Dholaks, umbrellas, and truck-art accents.</li>
-          <li><strong>Guest lounge corner:</strong> Cushioned seating for relaxed conversation.</li>
-          <li><strong>Photo wall:</strong> Dedicated backdrop for social media sharing.</li>
-          <li><strong>Coordinated table styling:</strong> Matching runners and centerpieces.</li>
-          <li><strong>Entrance statement:</strong> Welcome signage with fabric canopy.</li>
-          <li><strong>One clean hero area:</strong> Invest heavily in a single memorable stage.</li>
-        </ol>
-        <div class="cta-box">
-          Share your venue photo and Mehndi theme with <strong>Events By Sanaullah</strong> to plan a colorful setup!
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Additional Modals (3 through 10) dynamically styled similarly -->
-  <div id="modal-3" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal-3')">&times;</span><div class="modal-body"><h1>How to Plan the Perfect Birthday Party</h1><p>Design your room in clear zones: Welcome zone, Main Stage, Food area, and Activity section. Keep food practical and build a realistic timeline for cake-cutting and photos.</p><div class="cta-box">Contact <strong>Events By Sanaullah</strong> with your birthday party plans!</div></div></div></div>
-  
-  <div id="modal-4" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal-4')">&times;</span><div class="modal-body"><h1>How to Organize a Stylish Night Party</h1><p>Use layered lighting as a design tool, organize high/low seating arrangements, position the dance floor safely, and ensure sound safety precautions are in place.</p><div class="cta-box">Let <strong>Events By Sanaullah</strong> shape your night party experience!</div></div></div></div>
-
-  <div id="modal-5" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal-5')">&times;</span><div class="modal-body"><h1>University Event Management Guide</h1><p>Define clear objectives, manage guest flow with structured check-ins, build practical stage layouts, and prepare AV/technical backup options in advance.</p><div class="cta-box">Book <strong>Events By Sanaullah</strong> for campus orientations and seminars!</div></div></div></div>
-
-  <div id="modal-6" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal-6')">&times;</span><div class="modal-body"><h1>Engagement, Nikah & Walima Event Ideas</h1><p>Keep engagements personal, prioritize calm visibility for Nikahs, and refine dining and seating details for Walima receptions using restrained color palettes.</p><div class="cta-box">Turn your celebration into reality with <strong>Events By Sanaullah</strong>!</div></div></div></div>
-
-  <div id="modal-7" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal-7')">&times;</span><div class="modal-body"><h1>Corporate Event Planning Guide</h1><p>Focus on registration efficiency, functional seating arrangements (theater, classroom, boardroom), clear LED stage branding, and precise AV timing.</p><div class="cta-box">Contact <strong>Events By Sanaullah</strong> for professional corporate setups!</div></div></div></div>
-
-  <div id="modal-8" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal-8')">&times;</span><div class="modal-body"><h1>Planning an Event on a Budget</h1><p>Focus spending on focal points like the stage or entrance, utilize strategic lighting over heavy floral volumes, and avoid costly last-minute adjustments.</p><div class="cta-box">Plan your budget-friendly event with <strong>Events By Sanaullah</strong>!</div></div></div></div>
-
-  <div id="modal-9" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal-9')">&times;</span><div class="modal-body"><h1>Event Photography & Social Media</h1><p>Create dedicated photo backdrops, coordinate lighting setups with photographers, and plan short-form video moments for social channels like Instagram and TikTok.</p><div class="cta-box">Make your event shareable with <strong>Events By Sanaullah</strong>!</div></div></div></div>
-
-  <div id="modal-10" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal-10')">&times;</span><div class="modal-body"><h1>The Ultimate Event Planning Checklist</h1><p>Track bookings systematically from 6–8 weeks out down to the day-of execution, vendor walkthroughs, and post-event inventory wrap-ups.</p><div class="cta-box">Manage your checklist effortlessly with <strong>Events By Sanaullah</strong>!</div></div></div></div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Events By Sanaullah. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Interactivity Scripts -->
-  <script>
-    // Filter Functionality
-    function filterBlogs(category) {
-      const cards = document.querySelectorAll('.blog-card');
-      const buttons = document.querySelectorAll('.filter-btn');
-
-      buttons.forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
-
-      cards.forEach(card => {
-        if (category === 'all' || card.getAttribute('data-category') === category) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                answer.style.display = "block";
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
         }
-      });
-    }
 
-    // Modal Control Functions
-    function openModal(id) {
-      document.getElementById(id).style.display = 'block';
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal(id) {
-      document.getElementById(id).style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-
-    // Close modal if user clicks outside of modal content
-    window.onclick = function(event) {
-      if (event.target.classList.contains('modal')) {
-        event.target.style.display = 'none';
-        document.body.style.overflow = 'auto';
-      }
-    }
-  </script>
+        // Blog Expandable Toggle
+        function toggleBlogContent(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                btn.innerHTML = 'Read Full Article <i class="fas fa-chevron-down"></i>';
+            } else {
+                content.style.display = "block";
+                btn.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
+            }
+        }
+    </script>
 </body>
 </html>
